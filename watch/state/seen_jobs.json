@@ -318,5 +318,21 @@
     "notes": "Source fetch failed: 403 Client Error: Forbidden for url: https://openai.com/careers/",
     "first_seen": "2026-04-07",
     "last_seen": "2026-04-07"
+  },
+  "https://boards.greenhouse.io/safetyculture": {
+    "company": "SafetyCulture",
+    "source": "SafetyCulture Careers",
+    "title": "[Source fetch failed] SafetyCulture Careers",
+    "url": "https://boards.greenhouse.io/safetyculture",
+    "location": "Unavailable",
+    "posted_or_updated": "Unavailable",
+    "score": 0,
+    "priority": "low-priority",
+    "category": "Low Priority",
+    "resume_fit": "Low",
+    "research_fit": "Low",
+    "notes": "Source fetch failed: 404 Client Error: Not Found for url: https://job-boards.greenhouse.io/safetyculture",
+    "first_seen": "2026-04-07",
+    "last_seen": "2026-04-07"
   }
 }
