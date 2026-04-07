@@ -53,6 +53,24 @@
       "company": "Canva",
       "url": "https://www.canva.com/careers/",
       "allow_domains": ["www.canva.com", "canva.com"]
+    },
+    {
+      "name": "Airwallex Careers",
+      "company": "Airwallex",
+      "url": "https://careers.airwallex.com/jobs",
+      "allow_domains": ["careers.airwallex.com", "airwallex.com"]
+    },
+    {
+      "name": "Xero Careers",
+      "company": "Xero",
+      "url": "https://jobs.ashbyhq.com/xero",
+      "allow_domains": ["jobs.ashbyhq.com", "xero.com"]
+    },
+    {
+      "name": "SafetyCulture Careers",
+      "company": "SafetyCulture",
+      "url": "https://boards.greenhouse.io/safetyculture",
+      "allow_domains": ["boards.greenhouse.io", "safetyculture.com"]
     }
   ],
   "company_priority": [
@@ -64,7 +82,10 @@
     "Meta",
     "Microsoft",
     "Atlassian",
-    "Canva"
+    "Canva",
+    "Airwallex",
+    "Xero",
+    "SafetyCulture"
   ],
   "role_keywords": [
     "software engineer",
@@ -120,6 +141,8 @@
     "australia",
     "melbourne",
     "sydney",
+    "brisbane",
+    "perth",
     "remote",
     "remote-friendly"
   ]

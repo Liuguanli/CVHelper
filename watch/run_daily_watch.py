@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import html
 import os
 import re
 import smtplib
@@ -448,9 +449,11 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
     early = [job for job in jobs if job.category == "Early-Career / New Grad"][:8]
 
     lines = [
-        f"Daily Job Watch | {today}",
+        f"# Daily Job Watch Digest - {today}",
         "",
-        f"New: {len(new_jobs)} | Updated: {len(updated_jobs)} | Tracked: {len(jobs)}",
+        f"- New: {len(new_jobs)}",
+        f"- Updated: {len(updated_jobs)}",
+        f"- Tracked: {len(jobs)}",
         "",
     ]
 
@@ -461,24 +464,69 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
     ]
 
     for header, bucket in sections:
-        lines.append(header)
-        lines.append("-" * len(header))
+        lines.extend([f"## {header}", ""])
         if not bucket:
             lines.append("None")
             lines.append("")
             continue
-        for idx, job in enumerate(bucket, start=1):
-            lines.append(f"{idx}. {job.company} — {job.title}")
-            lines.append(f"   Date: {job.posted_or_updated}")
-            lines.append(f"   Location: {job.location}")
-            lines.append(f"   Link: {job.url}")
-            lines.append(f"   Fit: {job.resume_fit}; {job.research_fit}")
-            lines.append("")
+        lines.append("| Company | Role | Date | Location | Priority | Resume Fit | Research Fit | Link |")
+        lines.append("|---|---|---|---|---|---|---|---|")
+        for job in bucket:
+            lines.append(
+                f"| {job.company} | {job.title} | {job.posted_or_updated} | {job.location} | {job.priority} | {job.resume_fit} | {job.research_fit} | {job.url} |"
+            )
+        lines.append("")
 
     return "\n".join(lines).strip() + "\n"
 
 
-def send_email(subject: str, body: str) -> None:
+def render_latest_digest_html(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job], today: str) -> str:
+    strong = [job for job in jobs if job.category == "Strong Match"][:8]
+    stretch = [job for job in jobs if job.category == "Stretch but Worth Trying"][:8]
+    early = [job for job in jobs if job.category == "Early-Career / New Grad"][:8]
+
+    def render_table(title: str, bucket: list[Job]) -> str:
+        if not bucket:
+            return f"<h2>{html.escape(title)}</h2><p>None</p>"
+        rows = []
+        for job in bucket:
+            rows.append(
+                "<tr>"
+                f"<td>{html.escape(job.company)}</td>"
+                f"<td>{html.escape(job.title)}</td>"
+                f"<td>{html.escape(job.posted_or_updated)}</td>"
+                f"<td>{html.escape(job.location)}</td>"
+                f"<td>{html.escape(job.priority)}</td>"
+                f"<td>{html.escape(job.resume_fit)}</td>"
+                f"<td>{html.escape(job.research_fit)}</td>"
+                f"<td><a href=\"{html.escape(job.url)}\">Open</a></td>"
+                "</tr>"
+            )
+        return (
+            f"<h2>{html.escape(title)}</h2>"
+            "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse; width: 100%;'>"
+            "<thead><tr>"
+            "<th>Company</th><th>Role</th><th>Date</th><th>Location</th><th>Priority</th><th>Resume Fit</th><th>Research Fit</th><th>Link</th>"
+            "</tr></thead>"
+            f"<tbody>{''.join(rows)}</tbody></table>"
+        )
+
+    sections = [
+        render_table("Strong Match", strong),
+        render_table("Stretch but Worth Trying", stretch),
+        render_table("Early-Career / New Grad", early),
+    ]
+
+    return (
+        "<html><body style='font-family: Arial, sans-serif;'>"
+        f"<h1>Daily Job Watch Digest - {html.escape(today)}</h1>"
+        f"<p><strong>New:</strong> {len(new_jobs)} &nbsp; <strong>Updated:</strong> {len(updated_jobs)} &nbsp; <strong>Tracked:</strong> {len(jobs)}</p>"
+        + "".join(sections)
+        + "</body></html>"
+    )
+
+
+def send_email(subject: str, body: str, html_body: str | None = None) -> None:
     smtp_host = os.getenv("SMTP_HOST")
     smtp_port = os.getenv("SMTP_PORT")
     smtp_username = os.getenv("SMTP_USERNAME")
@@ -496,6 +544,8 @@ def send_email(subject: str, body: str) -> None:
     message["From"] = email_from
     message["To"] = email_to
     message.set_content(body)
+    if html_body:
+        message.add_alternative(html_body, subtype="html")
 
     context = ssl.create_default_context()
     try:
@@ -517,6 +567,7 @@ def main() -> int:
     discovered_text = render_discovered_roles(jobs, today)
     alerts_text = render_alerts(jobs, new_jobs, updated_jobs, today)
     digest_text = render_latest_digest(jobs, new_jobs, updated_jobs, today)
+    digest_html = render_latest_digest_html(jobs, new_jobs, updated_jobs, today)
 
     DISCOVERED_ROLES_PATH.write_text(discovered_text, encoding="utf-8")
     ALERTS_PATH.write_text(alerts_text, encoding="utf-8")
@@ -525,6 +576,7 @@ def main() -> int:
     send_email(
         subject=f"Daily Job Watch - {today}",
         body=digest_text,
+        html_body=digest_html,
     )
 
     print(f"Collected {len(jobs)} roles, {len(new_jobs)} new, {len(updated_jobs)} updated.")
