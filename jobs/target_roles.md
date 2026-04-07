@@ -11,7 +11,7 @@
 | Meta | Unknown title from provided link | `jobs/meta-role-1815415389242149-202604` | todo | Title should be confirmed from JD |
 | OpenAI | Software Engineer, Data Infrastructure, Research | `jobs/openai-software-engineer-data-infrastructure-research-202604` | todo | Strong backend / infra / research fit |
 | Databricks | Senior Software Engineer - Database Engine Internals | `jobs/databricks-senior-software-engineer-database-engine-internals-202604` | todo | Strong systems / database engine fit |
-| Databricks | Systems PhD - Software Engineer | `jobs/databricks-systems-phd-software-engineer-202604` | todo | Strongest direct PhD + systems fit |
+| Databricks | Systems PhD - Software Engineer | `jobs/databricks-systems-phd-software-engineer-202604` | drafted-20260405 | Strongest direct PhD + systems fit |
 
 说明：
 

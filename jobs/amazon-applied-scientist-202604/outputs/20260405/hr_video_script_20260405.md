@@ -1,0 +1,31 @@
+# HR Video Script
+
+## US Style Notes
+
+- Start with a smile and steady eye contact.
+- Use short sentences and pause after each key point.
+- Keep the tone clear, positive, and direct.
+- When talking about research, explain the problem, what you built, and why it mattered before naming the venue.
+
+## Key Message To Sell Yourself
+
+I can build real systems, explain technical work clearly, and connect research ideas to practical outcomes.
+
+## Script
+
+
+Hi, I am Guanli Liu. I am a software engineer and postdoctoral researcher in Melbourne. My background combines applied research, data systems, retrieval, and performance evaluation.
+
+I am interested in this role because it looks like a place where strong experimentation and practical implementation both matter. My work is strongest when I can combine research thinking with system building.
+
+One example is LayoutPilot, a layout advisory system I built for data lake style workloads. It supports dataset ingestion, SQL workload parsing, and layout recommendation. That project shows how I take a research problem and turn it into a working system. It led to publications at VLDB 2025 and VLDB 2026.
+
+Another example is benchmarking. I built DriftBench to study how system performance changes when workloads or data drift over time. The key idea was to go beyond static benchmark numbers and test whether behavior stays stable when conditions change. That work was published at VLDB 2026 and reflects how I think about careful evaluation and evidence-based results.
+
+Another example is retrieval and AI-assisted systems. At nftDb, I built an internal RAG-based knowledge assistant. In research, I also worked close to LLM-assisted spatial query processing and embedding-based query work. I am comfortable taking research ideas and turning them into useful systems and experiments.
+
+I also bring an engineering background. I have built data pipelines, SQL workflows, and backend components in both research and industry settings. That helps me work across the full path from idea to implementation.
+
+I know this role is closer to large-scale GenAI and multimodal reasoning than my strongest past work. I would describe my fit honestly as strongest in applied research, retrieval, evaluation, and system implementation. If the team values that combination, I believe I could contribute well.
+
+Thank you for your time. I would be glad to speak further.

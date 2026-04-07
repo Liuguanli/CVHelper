@@ -19,16 +19,12 @@ CVHelper/
 │   │   ├── job_posting.md
 │   │   ├── company_notes.md
 │   │   ├── targeting_notes.md
-│   │   └── outputs/
-│   │       ├── job_analysis.md
-│   │       ├── resume_changes.md
-│   │       ├── cover_letter.md
-│   │       └── hr_video_script.md
 │   └── <job-slug>/
 │       ├── job_posting.md
 │       ├── company_notes.md
 │       ├── targeting_notes.md
 │       └── outputs/
+│           └── <yyyymmdd>/
 ├── market_watch/
 │   ├── README.md                   # 新发现的相似岗位放这里
 │   ├── watch_targets.md            # 追踪范围和筛选规则
@@ -43,9 +39,40 @@ CVHelper/
 1. 运行 `scripts/new_job.sh company-role-date` 新建一个岗位目录。
 2. 把 JD 粘贴到 `jobs/<job-slug>/job_posting.md`。
 3. 把你对岗位的判断写到 `jobs/<job-slug>/targeting_notes.md`。
-4. 先把 `prompts/01_analyze_job.md` 和岗位文件一起给 harness。
-5. 再把 `prompts/02_tailor_resume.md`、`CV-ByteDance.tex`、`base/` 下资料和岗位分析一起给 harness。
-6. 最后把 `prompts/03_write_cover_letter.md` 和上一步结果一起给 harness，产出 cover letter 和视频稿。
+4. 先在 `jobs/<job-slug>/outputs/<yyyymmdd>/` 下生成岗位分析。
+5. 再在同一个 dated 目录下生成简历、cover letter 和视频稿。
+6. 最后补一轮评估输出：
+   - ATS / 机器筛选打分
+   - HR 视角 review
+6. 每次新一轮修改，都新建一个 dated 目录，避免版本混在一起。
+
+推荐文件命名：
+
+- 分享给别人的最终文件，文件名里最好同时带上：
+  - 你的名字
+  - 文档类型
+  - 公司或岗位名
+  - 日期
+- 推荐格式：
+  - `guanli_liu_resume_<company>_<position>.pdf`
+  - `guanli_liu_coverletter_<company>_<position>.pdf`
+  - `guanli_liu_videoscript_<company>_<position>.pdf`
+- 这样单独发文件时不会混淆，也方便你保留多个版本。
+
+目录收纳原则：
+
+- 每个岗位根目录只保留输入文件：`job_posting.md`、`company_notes.md`、`targeting_notes.md`
+- 中间结果和最终结果统一放进 `outputs/<yyyymmdd>/`
+- 不保留多余的占位输出文件
+- LaTeX 编译垃圾文件会自动清理
+- 每轮结果建议至少包含：
+  - `job_analysis_<yyyymmdd>.md`
+  - `resume_changes_<yyyymmdd>.md`
+  - `ats_review_<yyyymmdd>.md`
+  - `hr_review_<yyyymmdd>.md`
+  - 简历 PDF
+  - cover letter PDF
+  - video script PDF
 
 Git 管理建议：
 

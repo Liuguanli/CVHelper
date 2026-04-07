@@ -1,12 +1,13 @@
 # Job Posting
 
 ## Source
-
 - Company: Amazon
 - Role title: Software Development Engineer, Amazon Redshift, Redshift
 - URL: https://www.amazon.jobs/en/jobs/10378746/software-development-engineer-amazon-redshift-redshift
+- Snapshot date: 2026-04-05
 
 ## Notes
-
-- 这里后续补完整 JD 内容。
-- 这是一个明显偏 database / backend / systems 的岗位。
+- Verified from Amazon job page crawled 6 days ago.
+- Amazon Redshift query processing role inside the Redshift data plane.
+- Focus areas include query analysis, query optimization, parallel execution, SQL language features, AWS integration, and performance improvement.
+- Preferred background includes experience with database query engines.

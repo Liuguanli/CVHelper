@@ -1,0 +1,13 @@
+# Cover Letter
+
+I am applying for the Applied Scientist role at Amazon Selection and Catalog Systems. While my background is more systems- and retrieval-oriented than pure multimodal modeling, I believe I am a strong fit for an applied science role that values rigorous experimentation, practical implementation, and research depth.
+
+In my PhD and postdoctoral work at the University of Melbourne, I worked on data-intensive systems problems where model or system choices had to be tested carefully. One example is LayoutPilot, a layout advisory system I built for data lake style workloads. It supports dataset ingestion, SQL workload parsing, and layout recommendation, and it reflects how I think about turning research ideas into useful systems. This work led to publications at VLDB 2025 and VLDB 2026.
+
+Another example is DriftBench, which I built to study how performance changes when workloads or data drift over time. The key idea was to move beyond static benchmark results and measure whether system behavior stays stable when conditions change. That work strengthened my approach to evaluation and was published at VLDB 2026.
+
+I also worked on AI-assisted and retrieval-oriented systems. At nftDb, I built an internal RAG-based knowledge assistant. In research, I supervised work on LLM-assisted processing of complex spatial queries and on embedding-based spatial keyword query processing. Across this work, the common thread has been applied research that combines implementation, careful evaluation, and useful outcomes.
+
+What attracts me to this role is the chance to work on hard product identity and reasoning problems at very large scale. I would be excited to bring my research discipline, retrieval and evaluation background, and practical system-building experience to that setting.
+
+I would welcome the opportunity to discuss where my background could contribute most effectively.

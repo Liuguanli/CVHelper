@@ -5,6 +5,7 @@
 - 一个岗位定制版 LaTeX 简历：`jobs/<job-slug>/outputs/tailored_resume.tex`
 - 一个编译后的 PDF：`jobs/<job-slug>/outputs/tailored_resume.pdf`
 - 一个改动说明：`jobs/<job-slug>/outputs/resume_changes.md`
+- 一个 ATS / 机器筛选评估：`jobs/<job-slug>/outputs/ats_review.md`
 
 输入文件：
 
@@ -53,3 +54,18 @@
 - `Why it changed`
 - `What was intentionally not changed`
 - `Any remaining fit gaps`
+
+`ats_review.md` 请包含：
+
+- `ATS Match Score`：0 到 100
+- `Why this score`
+- `Keyword Coverage`
+- `Evidence Strength`
+- `Likely Screening Risks`
+- `Recommended Resume Fixes Before Applying`
+
+打分原则：
+
+- 目标不是虚高分，而是保守、实用、能指导修改。
+- 关键词覆盖要看“真实映射”，不是机械命中。
+- 如果 JD 和经历存在明显断层，必须降分并写明原因。

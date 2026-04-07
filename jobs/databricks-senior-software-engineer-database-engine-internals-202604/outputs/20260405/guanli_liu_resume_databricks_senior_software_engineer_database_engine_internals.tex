@@ -1,0 +1,311 @@
+\documentclass{resume}
+% \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\newcommand{\SoftwareEngineer}{Software Engineer}
+\newcommand{\DataScientist}{Data Scientist}
+\newcommand{\ResearchFellow}{Postdoctoral Research Fellow}
+
+% \usepackage{fontawesome5}
+
+
+\usepackage{xcolor}
+\begin{document}
+\pagenumbering{gobble}
+
+{\LARGE \textbf{Guanli Liu}}\\[-0.2em]
+% \faEnvelope\ \href{mailto:guanlil1@unimelb.edu.au}{guanlil1@unimelb.edu.au} 
+\faEnvelope\ \href{mailto:liuguanli22@gmail.com}{liuguanli22@gmail.com} 
+\textperiodcentered\ 
+\faLinkedin\ \href{https://www.linkedin.com/in/guanli-liu-11353058/}{LinkedIn} \textperiodcentered\ 
+\faGithub\ \href{https://github.com/Liuguanli}{GitHub}
+
+\faMapMarker\ Melbourne, Australia \textperiodcentered\ Open to relocation and remote \textperiodcentered\ 
+\faClockO\  UTC+10/+11 \textperiodcentered\ 
+\href{https://www.worldtimebuddy.com/?lid=5808079,5128581,5809844,1816670,2158177&h=2158177&hf=1}{Global time overlap \faExternalLink}
+\vspace{0.4em}
+
+% Redmond 是 5808079，San Francisco 是 5391959，New York City 是 5128581，Seattle 是 5809844，Singapore 是 1880252，Munich 是 2867714，Barcelona 是 3128760，Vancouver 是 6173331，Tokyo 是 1850147，Melbourne 是 2158177，而被去掉的 Beijing 是 1816670
+
+
+% -------------------------
+% Profile
+% -------------------------
+\section{\faUser\ \textbf{Profile}}
+Software engineer and postdoctoral researcher with a strong background in database systems, query processing, indexing, physical design, and performance optimization. My work has focused on system internals that affect query behavior, data layout, benchmarking, and performance trade-offs. I have built systems for workload parsing, layout recommendation, and systems evaluation, and published related work in venues such as VLDB and ICDE. Across research and industry, I have also worked on backend services, database performance tuning, and production-oriented data workflows.
+
+
+
+% -------------------------
+% Research & Work Experience
+% -------------------------
+\section{\faUsers\ \textbf{Research and Work Experience}}
+
+\datedsubsection{\textbf{PhD + Postdoc}, \textbf{The University of Melbourne}, Australia}{June. 2019 -- Present}
+
+\textit{Lead research and engineering projects on database systems, physical design, indexing, and performance evaluation.}
+\textit{Build system prototypes, study trade-offs in query behavior, and collaborate across research and engineering settings.}
+
+\begin{itemize}[parsep=0.4ex]
+
+
+\item \textbf{Data Layout and Physical Design}
+\begin{itemize}[parsep=0.3ex]
+    \item Built a \textbf{layout advisory} system for data lake-style datasets, supporting dataset and workload ingestion, SQL workload parsing, and automatic physical data optimization through layout recommendation.
+    \href{https://github.com/Liuguanli/layout_advisor}{\faGithub}
+    \textit{[VLDB 2026, submitted]}
+
+    \item Proposed a file \textbf{layout method} for data lake systems and developed an \(\mathcal{O}(1)\) cost model to efficiently measure layout quality.
+    \href{https://github.com/Liuguanli/LBMC}{\faGithub}
+    \href{https://www.vldb.org/pvldb/vol17/p4773-liu.pdf}{\textit{[VLDB 2025\faExternalLink]}}
+\end{itemize}
+
+\item \textbf{Benchmarking and Evaluation}
+\begin{itemize}[parsep=0.3ex]
+    \item Built \textbf{DriftBench}, a framework for evaluating performance stability under workload and data drift across database tuning and benchmarking scenarios.
+    \href{https://github.com/Liuguanli/DriftBench}{\faGithub}
+    \href{https://arxiv.org/abs/2510.10858}{\textit{[VLDB 2026\faExternalLink]}}
+    \item Built a \textbf{benchmarking framework} for traditional and learned spatial indexes, analyzing latency, I/O, and workload sensitivity under controlled query workloads. \href{https://github.com/Liuguanli/rl_spatial_benchmark}{\faGithub}
+\href{https://arxiv.org/abs/2512.11161}{\textit{[ICDE 2026\faExternalLink]}}
+\end{itemize}
+
+\item \textbf{Indexing, Spatial Indexes and Learned Indexes}
+\begin{itemize}[parsep=0.3ex]
+    \item Proposed a learned index construction method based on model reuse and fine-tuning, improving the efficiency and adaptability of index learning.
+\href{https://people.eng.unimelb.edu.au/jianzhongq/papers/DBML2023_ModelReuse.pdf}{\textit{[ICDEW 2023\faExternalLink]}}
+
+\item Built learned spatial index structures for multi-dimensional data, enabling efficient spatial query processing with improved lookup performance.
+\href{https://people.eng.unimelb.edu.au/baileyj/papers/ICDE2023_ELSI.pdf}{\textit{[ICDE 2023\faExternalLink]}}
+
+\item Developed recursive learned spatial index structures and studied their effectiveness for spatial query workloads.
+\href{https://github.com/Liuguanli/RSMI}{\faGithub}
+\href{https://www.vldb.org/pvldb/vol13/p2341-qi.pdf}{\textit{[VLDB 2020\faExternalLink]}}
+\end{itemize}
+
+\item \textbf{Other (Supervised Works)}
+\begin{itemize}[parsep=0.3ex]
+    \item Supervised work on learned cardinality estimation models. 
+    \href{<paper-link>}{\textit{[ICDE 2026: CoLSE\faExternalLink]}}
+
+   
+
+    \item Supervised work on LLM-assisted processing of complex spatial queries. 
+    \href{https://github.com/AI-DB-UoM/complex_spatial_data_generation}{\faGithub}
+    \href{https://findanexpert.unimelb.edu.au/scholarlywork/2270718-llm-enhanced-processing-of-complex-spatial-queries?cache=1772143387383}{\textit{[ADC 2025\faExternalLink]}}
+
+     \item Supervised work on embedding-based spatial keyword query processing.{\textit{[ADC 2025]}}
+\end{itemize}
+
+\end{itemize}
+
+\datedsubsection{\textbf{Data Scientist}, \textbf{{nftDb}}, Australia}{Feb. 2023 -- Feb. 2024}
+\textit{A startup focused on NFT trading data, market trend tracking, and multimodal search over digital assets.}
+
+\begin{itemize}[parsep=0.4ex]
+
+\item Built Python-based ingestion pipelines for raw blockchain transaction data, supporting Kafka-based streaming and Airflow-orchestrated batch workflows for downstream analytics.
+
+\item Developed SQL and dbt workflows to clean, normalize, and model large-scale transaction data into analytics-ready tables for product insights and reporting.
+
+\item Queried and analyzed transaction-level datasets in BigQuery to uncover user behaviour, marketplace activity, and performance trends across digital asset platforms.
+
+\item Developed an internal RAG-based knowledge assistant for technical documentation retrieval, data asset discovery, and workflow support across engineering teams.
+
+\item Partnered with engineers to improve pipeline reliability, data quality, and metric consistency across the end-to-end analytics and reporting stack.
+
+\end{itemize}
+
+% \datedsubsection{\textbf{Research Assistant}, \textbf{The University of Melbourne}, Australia}{Aug. 2022 -- Aug. 2023}
+% \begin{itemize}
+%   \item \textit{Project One:} Developed an AI-assisted system for reducing reading interruptions using \textbf{GPT API} and \textbf{Google Cloud}.
+%   \item \textit{Project Two:} Designed a \textbf{C language coding style checker} to detect common errors using Python.
+% \end{itemize}
+
+\datedsubsection{\textbf{Software Engineer}, \textbf{Baidu}, China}{Jul. 2015 -- Aug. 2017}
+
+\textit{Worked on Baidu's internal company IM system serving employees and business partners.}
+\begin{itemize}[parsep=0.4ex]
+
+\item Designed messaging protocols and implemented message deduplication mechanisms to improve delivery reliability and consistency across large-scale communication workflows.
+
+% \item Collaborated with backend engineers and cross-platform teams to design file transfer architecture supporting multi-end business scenarios and efficient data synchronization.
+
+\item Improved database performance through profiling, query optimization, and systematic tuning of backend data access workflows.
+
+\end{itemize}
+
+
+% -------------------------
+% Skills
+% -------------------------
+\section{\faCogs\ \textbf{Engineering Skills}}
+
+\begin{itemize}[parsep=0.4ex]
+
+\item \textbf{Programming:} Proficient in Python and Java, with working knowledge of C++ and SQL
+
+\item \textbf{Database / Systems:} Query processing, indexing, physical design, benchmarking, and performance evaluation
+
+\item \textbf{Data Systems \& Pipelines:} Experience with SparkSQL, Apache Hudi, REST APIs, data ingestion pipelines, and batch / incremental data processing
+
+\item \textbf{Databases:} Experience with PostgreSQL, PostGIS, pgvector, BigQuery, and spatial data management
+
+\item \textbf{AI / Retrieval Systems:} Experience with RAG pipelines, vector databases, embedding-based retrieval
+
+\item \textbf{Cloud \& Infrastructure:} Experience with Google Cloud Platform and Docker
+
+\item \textbf{Machine Learning:} Hands-on experience with PyTorch, TorchLib, Scikit-learn, and common machine learning algorithms for classification, regression, clustering, and representation learning
+
+  \item \textbf{Algorithmic Knowledge:} Solid understanding of fundamental data structures and algorithms
+\end{itemize}
+
+% -------------------------
+% Education
+% -------------------------
+\section{\faGraduationCap\ \textbf{Education}}
+\datedsubsection{\textbf{PhD} in Computer Science, \textit{The University of Melbourne}, Australia}{2019 -- 2023}
+\datedsubsection{\textbf{M.S.} in Computer Technology, \textit{Northeastern University}, China}{2013 --  2015}
+\datedsubsection{\textbf{B.Eng.} in Software Engineering, \textit{Northeastern University}, China}{2009 --  2013}
+
+% -------------------------
+% Publications
+% -------------------------
+% \section{\faFile\ \textbf{Selected Publications}}
+
+% \textit{Representative publications from projects that I led or supervised.}
+
+% \begin{itemize}
+
+% \item ``Toward Drift-Aware Database Benchmarking.'' \textbf{\textit{VLDB}}, 2026. \textit{[1st author]}
+
+% \item ``Benchmarking RL-Enhanced Spatial Indices Against Traditional, Advanced, and Learned Counterparts.'' \textbf{\textit{ICDE}}, 2026. \textit{[1st author]}
+
+% \item ``CoLSE: A Lightweight and Robust Hybrid Learned Model for Single-Table Cardinality Estimation using Joint CDF.'' \textbf{\textit{ICDE}}, 2026. \textit{[2nd author]}
+
+% \item ``Advancing Spatial Keyword Queries: From Filters to Unified Vector Embeddings.'' \textbf{\textit{ADC}}, 2025. \textit{[2nd author]}
+
+% \item ``LLM-Enhanced Processing of Complex Spatial Queries.'' \textbf{\textit{ADC}}, 2025. \textit{[2nd author]}
+
+% \item ``Efficient Cost Modeling of Space-filling Curves.'' \textbf{\textit{VLDB}}, 2025. \textit{[1st author]}
+
+% \item ``Efficient Index Learning via Model Reuse and Fine-tuning.'' \textbf{\textit{ICDEW}}, 2023. \textit{[1st author]}
+
+% \item ``Efficiently Learning Spatial Indices.'' \textbf{\textit{ICDE}}, 2023. \textit{[1st author]}
+
+% \item ``Effectively Learning Spatial Indices.'' \textbf{\textit{VLDB}}, 2020. \textit{[2nd author]}
+
+% \item ``The Moving K Diversified Nearest Neighbor Query.'' \textbf{\textit{TKDE}}, 2016. \textit{[2nd author]}
+
+% \end{itemize}
+% % \section{\faFile\ \textbf{Selected Publications}}
+
+% % \begin{itemize}
+
+% % \item \textbf{Guanli Liu}, Renata Borovica-Gajic, Hai Lan, Zhifeng Bao.  
+% % ``Benchmarking RL-Enhanced Spatial Indices Against Traditional, Advanced, and Learned Counterparts.''  
+% % \textit{ICDE}, 2026. 
+% % % \href{https://github.com/Liuguanli/rl_spatial_benchmark}{\textcolor{blue}{\texttt{[Code]}}}
+
+% % \item Lankadinee Rathuwadu, \textbf{Guanli Liu}, Christopher Leckie, Renata Borovica-Gajic.  
+% % ``CoLSE: A Lightweight and Robust Hybrid Learned Model for Single-Table Cardinality Estimation using Joint CDF.''  
+% % \textit{ICDE}, 2026.
+
+% % \item Kaan Gocmen, \textbf{Guanli Liu}, Renata Borovica-Gajic.  
+% % ``Advancing Spatial Keyword Queries: From Filters to Unified Vector Embeddings.''  
+% % \textit{Australasian Database Conference (ADC)}, 2025.
+
+% % \item Ruiyi Hao, \textbf{Guanli Liu}, Renata Borovica-Gajic.  
+% % ``LLM-Enhanced Processing of Complex Spatial Queries.''  
+% % \textit{Australasian Database Conference (ADC)}, 2025.
+
+
+% %   \item \textbf{Guanli Liu}, Lars Kulik, Christian S. Jensen, Tianyi Li, Renata Borovica-Gajic, Jianzhong Qi.  
+% %   ``Efficient Cost Modeling of Space-filling Curves." \textit{VLDB}, 2025.  
+
+  
+
+% %   \item \textbf{Guanli Liu}, Jianzhong Qi, Lars Kulik, Kazuya Soga, Renata Borovica-Gajic, Benjamin I. P. Rubinstein.  
+% %   ``Efficient Index Learning via Model Reuse and Fine-tuning." \textit{ICDEW}, 2023.  
+
+
+% %   \item \textbf{Guanli Liu}, Jianzhong Qi, Christian S. Jensen, James Bailey, Lars Kulik.  
+% %   ``Efficiently Learning Spatial Indices." \textit{ICDE}, 2023.  
+
+
+% %   \item Jianzhong Qi, \textbf{Guanli Liu}, Christian S. Jensen, Lars Kulik.  
+% %   ``Effectively Learning Spatial Indices." \textit{VLDB}, 2020.  
+
+% %   \item Yu Gu, \textbf{Guanli Liu}, Jianzhong Qi, Hongfei Xu, Ge Yu, Rui Zhang.  
+% %   ``The Moving K Diversified Nearest Neighbor Query." \textit{TKDE}, 2016.  
+
+% % \end{itemize}
+
+
+% % % -------------------------
+% % % Seminar/Conference Presentations
+% % % -------------------------
+% % \section{\faMicrophone\ \textbf{Seminar and Conference Presentations}}
+% % \begin{itemize}
+% %   \item TODO (List conferences where you have presented, specify if invited talk, oral, or poster)
+% % \end{itemize}
+
+% % % -------------------------
+% % % Teaching and Supervision
+% % % -------------------------
+% % \section{\faUniversity\ \textbf{Teaching and Supervision}}
+% % \begin{itemize}
+% %   \item TODO (List postgraduate/undergraduate teaching roles, tutor/demo roles, co-supervision experience)
+% % \end{itemize}
+
+\section{\faGraduationCap\ \textbf{Teaching}}
+\begin{itemize}
+  % \item \textbf{INFO20003 – Database Systems (The University of Melbourne):} 
+  % Prepared teaching materials for the course in advance of the 2025 Semester 2 offering. Will participate in teaching in the upcoming semester.
+
+  \item \textbf{COMP90018 – Android Application Development (The University of Melbourne):} 
+  Tutor from Aug. 2019 to 2023, responsible for tutorials, student support, and assessment marking.
+
+  \item \textbf{COMP90041 – Programming and Software Development (The University of Melbourne):} 
+  Tutor from Aug. 2019 to 2023, responsible for tutorials and assessment marking
+\end{itemize}
+
+% -------------------------
+% Leadership and Service
+% -------------------------
+\section{\faUsers\ \textbf{Research Service}}
+\begin{itemize}
+  \item \textbf{Conference Reviewer:}  \textbf{SIGMOD} 2026, \textbf{VLDB} 2027 (PC), 2026 (Shadow PC), 2025 (External), KDD 2026, 2025 (Excellent Reviewer)
+  \item \textbf{Journal Reviewer:} TKDE, WWW, Transactions on Spatial Algorithms and Systems (TSAS)
+\end{itemize}
+
+% \section{\faBriefcase\ \textbf{Supervision}}
+
+
+% \noindent\textbf{Kaan Gocmen} (Master’s Student, University of Melbourne)\\
+% \textit{Topic:} Advancing Spatial Keyword Queries\\
+% \textit{Publication:} To appear in \textit{Australasian Database Conference (ADC)}, 2025.
+
+% \vspace{0.8em}
+% \noindent\textbf{Ruiyi Hao} (Master’s Student, University of Melbourne)\\
+% \textit{Topic:} LLM for Spatial Queries\\
+% \textit{Publication:} To appear in \textit{Australasian Database Conference (ADC)}, 2025.
+
+% \end{itemize}
+
+% % -------------------------
+% % Administrative Responsibilities
+% % -------------------------
+% \section{\faTasks\ \textbf{Administrative Responsibilities}}
+% \begin{itemize}
+%   \item TODO (List any faculty, department, lab, or institutional responsibilities)
+% \end{itemize}
+
+% % -------------------------
+% % Community Engagement
+% % -------------------------
+% \section{\faUsers\ \textbf{Community Engagement}}
+% \begin{itemize}
+%   \item TODO (List any public talks, outreach, science communication, open-source contributions)
+% \end{itemize}
+
+\end{document}

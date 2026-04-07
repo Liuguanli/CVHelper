@@ -24,4 +24,11 @@ xelatex -interaction=nonstopmode -halt-on-error -output-directory="$tex_dir" "$t
 xelatex -interaction=nonstopmode -halt-on-error -output-directory="$tex_dir" "$tex_file"
 
 pdf_file="${tex_dir}/$(basename "${tex_name%.tex}.pdf")"
+
+# Remove LaTeX scratch files so output folders stay tidy.
+rm -f \
+  "${tex_dir}/$(basename "${tex_name%.tex}.aux")" \
+  "${tex_dir}/$(basename "${tex_name%.tex}.log")" \
+  "${tex_dir}/$(basename "${tex_name%.tex}.out")"
+
 echo "Built PDF: $pdf_file"
