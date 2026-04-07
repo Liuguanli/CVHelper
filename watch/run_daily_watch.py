@@ -35,12 +35,17 @@ DATE_PATTERNS = [
 ]
 
 GENERIC_TITLE_PATTERNS = [
-    re.compile(r"^open roles?$", re.IGNORECASE),
-    re.compile(r"^search jobs?$", re.IGNORECASE),
-    re.compile(r"^open positions?$", re.IGNORECASE),
-    re.compile(r"^microsoft research blog$", re.IGNORECASE),
-    re.compile(r"^about microsoft research", re.IGNORECASE),
-    re.compile(r"^microsoft research podcast$", re.IGNORECASE),
+    re.compile(r"^open roles?\b", re.IGNORECASE),
+    re.compile(r"^search jobs?\b", re.IGNORECASE),
+    re.compile(r"^open positions?\b", re.IGNORECASE),
+    re.compile(r"^job details\b", re.IGNORECASE),
+    re.compile(r"^microsoft research blog\b", re.IGNORECASE),
+    re.compile(r"^about microsoft research\b", re.IGNORECASE),
+    re.compile(r"^microsoft research podcast\b", re.IGNORECASE),
+    re.compile(r"^microsoft research\b", re.IGNORECASE),
+    re.compile(r"^programming languages and software engineering$", re.IGNORECASE),
+    re.compile(r"^join us at the forefront of research at microsoft$", re.IGNORECASE),
+    re.compile(r"^empower engineers\. inspire productivity\.$", re.IGNORECASE),
     re.compile(r"^careers?$", re.IGNORECASE),
     re.compile(r"^jobs?$", re.IGNORECASE),
 ]
@@ -52,6 +57,14 @@ GENERIC_URL_SNIPPETS = [
     "/search?",
     "/search/",
     "/company/careers",
+    "/careers/open-positions/",
+    "/research-area/",
+    "/about-microsoft-research/",
+    "/applications/jobs/results/ai",
+    "/applications/jobs/results/dashboard",
+    "/applications/jobs/results/how-we-hire",
+    "/applications/jobs/results/students",
+    "/applications/jobs/results/teams",
 ]
 
 TITLE_ROLE_KEYWORDS = [
@@ -74,6 +87,30 @@ TITLE_ROLE_KEYWORDS = [
     "graduate",
     "early career",
     "intern",
+]
+
+TITLE_REQUIRED_TOKENS = [
+    "engineer",
+    "scientist",
+    "developer",
+    "researcher",
+    "intern",
+    "graduate",
+    "student",
+    "architect",
+]
+
+JOB_PAGE_SIGNALS = [
+    "responsibilities",
+    "qualifications",
+    "minimum qualifications",
+    "preferred qualifications",
+    "about the job",
+    "job description",
+    "what you'll do",
+    "what you will do",
+    "about the role",
+    "basic qualifications",
 ]
 
 LOCATION_PATTERNS = [
@@ -143,9 +180,14 @@ def normalize_url(base_url: str, href: str) -> str:
 def is_job_like_link(url: str, text: str, source: Source) -> bool:
     lower_url = url.lower()
     lower_text = text.lower()
+    normalized_source = normalize_url(source.url, "")
+    if url == normalized_source:
+        return False
     if not any(domain in lower_url for domain in source.allow_domains):
         return False
     if any(snippet in lower_url for snippet in GENERIC_URL_SNIPPETS):
+        return False
+    if "google.com/about/careers/applications/jobs/results/" in lower_url and not re.search(r"/results/\d", lower_url):
         return False
     if any(token in lower_url for token in ["/jobs/", "/job/", "/careers/details/", "/job_details/", "/applications/jobs/results/", "/careers/jobs/"]):
         return True
@@ -197,7 +239,23 @@ def looks_like_real_job_title(title: str) -> bool:
     if any(pattern.search(normalized) for pattern in GENERIC_TITLE_PATTERNS):
         return False
     lower_title = normalized.lower()
-    return any(keyword in lower_title for keyword in TITLE_ROLE_KEYWORDS)
+    return any(keyword in lower_title for keyword in TITLE_ROLE_KEYWORDS) or any(token in lower_title for token in TITLE_REQUIRED_TOKENS)
+
+
+def looks_like_job_page(url: str, title: str, text: str) -> bool:
+    lower_url = url.lower()
+    lower_title = title.lower()
+    lower_text = text.lower()
+    if any(snippet in lower_url for snippet in GENERIC_URL_SNIPPETS):
+        return False
+    if any(pattern.search(title) for pattern in GENERIC_TITLE_PATTERNS):
+        return False
+    if not looks_like_real_job_title(title):
+        return False
+    has_job_url = any(token in lower_url for token in ["/jobs/", "/job/", "/careers/details/", "/job_details/"])
+    has_job_signal = any(signal in lower_text for signal in JOB_PAGE_SIGNALS)
+    has_title_role = any(token in lower_title for token in TITLE_REQUIRED_TOKENS)
+    return (has_job_url or has_job_signal) and has_title_role
 
 
 def extract_date(text: str) -> str:
@@ -307,6 +365,8 @@ def collect_jobs(config: dict) -> list[Job]:
             text = text_from_html(job_html)
             title = extract_title(job_html)
             if len(title) < 8:
+                continue
+            if not looks_like_job_page(candidate_url, title, text):
                 continue
             score, priority, category, resume_fit, research_fit, notes = score_job(title, text, config)
             if score == 0 and not title.startswith("[Source fetch failed]"):
@@ -449,13 +509,32 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
     early = [job for job in jobs if job.category == "Early-Career / New Grad"][:8]
 
     lines = [
-        f"# Daily Job Watch Digest - {today}",
-        "",
-        f"- New: {len(new_jobs)}",
-        f"- Updated: {len(updated_jobs)}",
-        f"- Tracked: {len(jobs)}",
+        f"Daily Job Watch Digest - {today}",
+        "=" * 36,
+        f"New: {len(new_jobs)} | Updated: {len(updated_jobs)} | Tracked: {len(jobs)}",
         "",
     ]
+
+    def clip(value: str, width: int) -> str:
+        compact = re.sub(r"\s+", " ", value).strip()
+        return compact if len(compact) <= width else compact[: width - 1] + "…"
+
+    def render_plain_table(title: str, bucket: list[Job]) -> list[str]:
+        section = [title, "-" * len(title)]
+        if not bucket:
+            section.extend(["None", ""])
+            return section
+        header = f"{'#':<2}  {'Company':<12}  {'Role':<42}  {'Date':<16}  {'Location':<24}"
+        section.append(header)
+        section.append("-" * len(header))
+        for idx, job in enumerate(bucket, start=1):
+            section.append(
+                f"{idx:<2}  {clip(job.company,12):<12}  {clip(job.title,42):<42}  {clip(job.posted_or_updated,16):<16}  {clip(job.location,24):<24}"
+            )
+            section.append(f"    Link: {job.url}")
+            section.append(f"    Fit: {job.resume_fit} | {job.research_fit}")
+        section.append("")
+        return section
 
     sections = [
         ("Strong Match", strong),
@@ -464,18 +543,7 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
     ]
 
     for header, bucket in sections:
-        lines.extend([f"## {header}", ""])
-        if not bucket:
-            lines.append("None")
-            lines.append("")
-            continue
-        lines.append("| Company | Role | Date | Location | Priority | Resume Fit | Research Fit | Link |")
-        lines.append("|---|---|---|---|---|---|---|---|")
-        for job in bucket:
-            lines.append(
-                f"| {job.company} | {job.title} | {job.posted_or_updated} | {job.location} | {job.priority} | {job.resume_fit} | {job.research_fit} | {job.url} |"
-            )
-        lines.append("")
+        lines.extend(render_plain_table(header, bucket))
 
     return "\n".join(lines).strip() + "\n"
 
