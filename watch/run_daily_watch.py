@@ -33,6 +33,48 @@ DATE_PATTERNS = [
     re.compile(r"Updated[:\s]+([A-Z][a-z]+ \d{1,2}, \d{4})"),
 ]
 
+GENERIC_TITLE_PATTERNS = [
+    re.compile(r"^open roles?$", re.IGNORECASE),
+    re.compile(r"^search jobs?$", re.IGNORECASE),
+    re.compile(r"^open positions?$", re.IGNORECASE),
+    re.compile(r"^microsoft research blog$", re.IGNORECASE),
+    re.compile(r"^about microsoft research", re.IGNORECASE),
+    re.compile(r"^microsoft research podcast$", re.IGNORECASE),
+    re.compile(r"^careers?$", re.IGNORECASE),
+    re.compile(r"^jobs?$", re.IGNORECASE),
+]
+
+GENERIC_URL_SNIPPETS = [
+    "/blog/",
+    "/podcast/",
+    "/about/",
+    "/search?",
+    "/search/",
+    "/company/careers",
+]
+
+TITLE_ROLE_KEYWORDS = [
+    "software engineer",
+    "research engineer",
+    "research scientist",
+    "applied scientist",
+    "researcher",
+    "member of technical staff",
+    "data engineer",
+    "data infrastructure",
+    "database",
+    "systems",
+    "backend",
+    "storage",
+    "query",
+    "platform engineer",
+    "ml systems",
+    "new grad",
+    "graduate",
+    "early career",
+    "intern",
+]
+
 LOCATION_PATTERNS = [
     re.compile(r"(San Francisco, CA|Seattle, WA|New York City, NY|Mountain View, CA|Redmond, WA|Melbourne, Australia|Sydney, Australia|Remote-Friendly[^\\n]*)"),
     re.compile(r"(Menlo Park, CA|London, UK|Zürich, CH|Sydney, NSW, Australia|Melbourne, VIC, Australia)"),
@@ -102,9 +144,11 @@ def is_job_like_link(url: str, text: str, source: Source) -> bool:
     lower_text = text.lower()
     if not any(domain in lower_url for domain in source.allow_domains):
         return False
-    if any(token in lower_url for token in ["/jobs/", "/job/", "/careers/details/", "/job_details/", "/applications/jobs/results/"]):
+    if any(snippet in lower_url for snippet in GENERIC_URL_SNIPPETS):
+        return False
+    if any(token in lower_url for token in ["/jobs/", "/job/", "/careers/details/", "/job_details/", "/applications/jobs/results/", "/careers/jobs/"]):
         return True
-    if any(token in lower_text for token in ["engineer", "scientist", "applied scientist", "research", "data engineer", "software"]):
+    if any(token in lower_text for token in TITLE_ROLE_KEYWORDS):
         return True
     return False
 
@@ -118,7 +162,6 @@ def extract_candidate_urls(source: Source, html: str) -> list[str]:
         url = normalize_url(source.url, href)
         if is_job_like_link(url, text, source):
             urls.add(url)
-    urls.add(source.url)
     return sorted(urls)
 
 
@@ -146,6 +189,16 @@ def extract_title(html: str) -> str:
     return re.sub(r"\s+", " ", title)
 
 
+def looks_like_real_job_title(title: str) -> bool:
+    normalized = re.sub(r"\s+", " ", title).strip()
+    if len(normalized) < 10:
+        return False
+    if any(pattern.search(normalized) for pattern in GENERIC_TITLE_PATTERNS):
+        return False
+    lower_title = normalized.lower()
+    return any(keyword in lower_title for keyword in TITLE_ROLE_KEYWORDS)
+
+
 def extract_date(text: str) -> str:
     for pattern in DATE_PATTERNS:
         match = pattern.search(text)
@@ -164,9 +217,12 @@ def extract_location(text: str) -> str:
 
 def score_job(title: str, text: str, config: dict) -> tuple[int, str, str, str, str, str]:
     content = f"{title}\n{text}".lower()
+    lower_title = title.lower()
 
     if any(term in content for term in config["exclusion_keywords"]):
         return 0, "skip", "Low Priority", "Low", "Low", "Filtered by exclusion keywords"
+    if not looks_like_real_job_title(title):
+        return 0, "skip", "Low Priority", "Low", "Low", "Filtered as non-job page"
 
     score = 0
 
@@ -174,11 +230,13 @@ def score_job(title: str, text: str, config: dict) -> tuple[int, str, str, str, 
     strong_hits = [term for term in config["strong_match_keywords"] if term in content]
     early_hits = [term for term in config["early_career_keywords"] if term in content]
     location_hits = [term for term in config["preferred_locations"] if term in content]
+    title_hits = [term for term in TITLE_ROLE_KEYWORDS if term in lower_title]
 
     score += 6 * len(role_hits)
     score += 8 * len(strong_hits)
     score += 4 * len(location_hits)
     score += 3 * len(early_hits)
+    score += 10 * len(title_hits)
 
     if any(term in content for term in ["phd", "research", "scientist", "systems", "database", "backend", "data infrastructure"]):
         score += 10
@@ -211,7 +269,7 @@ def score_job(title: str, text: str, config: dict) -> tuple[int, str, str, str, 
     else:
         priority = "low-priority"
 
-    notes = "Signals: " + ", ".join((strong_hits or role_hits or early_hits)[:4]) if (strong_hits or role_hits or early_hits) else "General relevance only"
+    notes = "Signals: " + ", ".join((strong_hits or title_hits or role_hits or early_hits)[:4]) if (strong_hits or title_hits or role_hits or early_hits) else "General relevance only"
     return score, priority, category, resume_fit, research_fit, notes
 
 
@@ -385,16 +443,14 @@ def render_alerts(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job],
 
 
 def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job], today: str) -> str:
-    strong = [job for job in jobs if job.category == "Strong Match"][:10]
-    stretch = [job for job in jobs if job.category == "Stretch but Worth Trying"][:10]
-    early = [job for job in jobs if job.category == "Early-Career / New Grad"][:10]
+    strong = [job for job in jobs if job.category == "Strong Match"][:8]
+    stretch = [job for job in jobs if job.category == "Stretch but Worth Trying"][:8]
+    early = [job for job in jobs if job.category == "Early-Career / New Grad"][:8]
 
     lines = [
-        f"# Daily Job Watch Digest - {today}",
+        f"Daily Job Watch | {today}",
         "",
-        f"- New roles: {len(new_jobs)}",
-        f"- Updated roles: {len(updated_jobs)}",
-        f"- Total tracked roles this run: {len(jobs)}",
+        f"New: {len(new_jobs)} | Updated: {len(updated_jobs)} | Tracked: {len(jobs)}",
         "",
     ]
 
@@ -405,17 +461,21 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
     ]
 
     for header, bucket in sections:
-        lines.extend([f"## {header}", ""])
+        lines.append(header)
+        lines.append("-" * len(header))
         if not bucket:
-            lines.append("- None")
+            lines.append("None")
             lines.append("")
             continue
-        for job in bucket:
-            lines.append(f"- {job.company} | {job.title} | {job.posted_or_updated} | {job.location}")
-            lines.append(f"  URL: {job.url}")
-        lines.append("")
+        for idx, job in enumerate(bucket, start=1):
+            lines.append(f"{idx}. {job.company} — {job.title}")
+            lines.append(f"   Date: {job.posted_or_updated}")
+            lines.append(f"   Location: {job.location}")
+            lines.append(f"   Link: {job.url}")
+            lines.append(f"   Fit: {job.resume_fit}; {job.research_fit}")
+            lines.append("")
 
-    return "\n".join(lines)
+    return "\n".join(lines).strip() + "\n"
 
 
 def send_email(subject: str, body: str) -> None:
@@ -438,9 +498,12 @@ def send_email(subject: str, body: str) -> None:
     message.set_content(body)
 
     context = ssl.create_default_context()
-    with smtplib.SMTP_SSL(smtp_host, int(smtp_port), context=context) as server:
-        server.login(smtp_username, smtp_password)
-        server.send_message(message)
+    try:
+        with smtplib.SMTP_SSL(smtp_host, int(smtp_port), context=context) as server:
+            server.login(smtp_username, smtp_password)
+            server.send_message(message)
+    except Exception as exc:
+        print(f"Email sending failed: {exc}")
 
 
 def main() -> int:
