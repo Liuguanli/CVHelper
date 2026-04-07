@@ -1,18 +1,28 @@
 # Discovered Similar Roles
 
-这个文件只记录“后来新发现”的岗位，不重复写你已经放进 `jobs/` 的主申请列表。
+Last updated: 2026-04-07
 
-只记录同时满足以下要求的岗位：
+这个文件记录当前巡检结果里值得继续关注的岗位。
 
-- 属于你的目标公司或同等级技术公司
-- 和你的简历或 research 至少一项明显匹配
-- 值得你后续花时间评估
-
-记录格式：
-
-| Date Found | Company | Role Title | URL | Resume Fit | Research Fit | Priority | Notes |
-|---|---|---|---|---|---|---|---|
-
-示例：
-
-| 2026-04-05 | ExampleCorp | Senior Data Infrastructure Engineer | https://example.com/job | High: ingestion, SQL, reliability | Medium: systems evaluation | high-priority | Strong overlap with nftDb pipelines and data systems work |
+| Date Seen | Company | Role Title | URL | Posted / Updated | Location | Resume Fit | Research Fit | Priority | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-07 | Anthropic | Open Roles | https://job-boards.greenhouse.io/anthropic | Not shown on page | Remote-Friendly, U | High: systems, performance | High: systems, performance | high-priority | Signals: systems, performance |
+| 2026-04-07 | Microsoft | Microsoft Research Blog | https://www.microsoft.com/en-us/research/blog | Not shown on page | Not shown on page | High: storage, systems, benchmark | High: storage, systems, benchmark | early-career | Signals: storage, systems, benchmark, performance |
+| 2026-04-07 | Microsoft | Microsoft Research Blog | https://www.microsoft.com/en-us/research/blog/ | Not shown on page | Not shown on page | High: storage, systems, benchmark | High: storage, systems, benchmark | early-career | Signals: storage, systems, benchmark, performance |
+| 2026-04-07 | Google | Search Jobs | https://www.google.com/about/careers/applications/jobs/results/?q=phd+systems+software+engineer+research&page=2 | Not shown on page | Mountain View, CA | High: database, storage, systems | High: database, storage, systems | early-career | Signals: database, storage, systems, benchmark |
+| 2026-04-07 | Microsoft | Open Positions | https://www.microsoft.com/en-us/research/careers/open-positions/ | April 3, 2026 | Redmond, WA | High: systems, retrieval, data platform | High: systems, retrieval, data platform | early-career | Signals: systems, retrieval, data platform |
+| 2026-04-07 | Microsoft | Programming languages and software engineering | https://www.microsoft.com/en-us/research/research-area/programming-languages-software-engineering/ | April 3, 2026 | Redmond, WA | High: systems, benchmark, retrieval | High: systems, benchmark, retrieval | early-career | Signals: systems, benchmark, retrieval, data platform |
+| 2026-04-07 | Google | Search Jobs | https://www.google.com/about/careers/applications/jobs/results/?q=phd%20systems%20software%20engineer%20research | Not shown on page | Seattle, WA | High: storage, systems, performance | High: storage, systems, performance | early-career | Signals: storage, systems, performance |
+| 2026-04-07 | Google | Search Jobs | https://www.google.com/about/careers/applications/jobs/results/?q=phd+systems+software+engineer+research | Not shown on page | Seattle, WA | High: storage, systems, performance | High: storage, systems, performance | early-career | Signals: storage, systems, performance |
+| 2026-04-07 | Microsoft | Microsoft Research – Emerging Technology, Computer, & Software Research | https://www.microsoft.com/en-us/research/ | Not shown on page | Not shown on page | High: storage, systems, retrieval | High: storage, systems, retrieval | early-career | Signals: storage, systems, retrieval, data platform |
+| 2026-04-07 | Microsoft | About Microsoft Research - Microsoft Research | https://www.microsoft.com/en-us/research/about-microsoft-research/ | Not shown on page | Not shown on page | High: systems, retrieval, index | High: systems, retrieval, index | early-career | Signals: systems, retrieval, index, data platform |
+| 2026-04-07 | Microsoft | Microsoft Research Podcast | https://www.microsoft.com/en-us/research/podcast/ | Not shown on page | Not shown on page | High: systems, retrieval, data platform | High: systems, retrieval, data platform | early-career | Signals: systems, retrieval, data platform |
+| 2026-04-07 | Google | job details | https://www.google.com/about/careers/applications/jobs/results/ai?q=phd+systems+software+engineer+research | Not shown on page | Seattle, WA | High: systems, performance | High: systems, performance | early-career | Signals: systems, performance |
+| 2026-04-07 | Google | job details | https://www.google.com/about/careers/applications/jobs/results/dashboard?q=phd+systems+software+engineer+research | Not shown on page | Seattle, WA | High: systems, performance | High: systems, performance | early-career | Signals: systems, performance |
+| 2026-04-07 | Google | job details | https://www.google.com/about/careers/applications/jobs/results/how-we-hire?q=phd+systems+software+engineer+research | Not shown on page | Seattle, WA | High: systems, performance | High: systems, performance | early-career | Signals: systems, performance |
+| 2026-04-07 | Google | job details | https://www.google.com/about/careers/applications/jobs/results/students?q=phd+systems+software+engineer+research | Not shown on page | Seattle, WA | High: systems, performance | High: systems, performance | early-career | Signals: systems, performance |
+| 2026-04-07 | Google | job details | https://www.google.com/about/careers/applications/jobs/results/teams?q=phd+systems+software+engineer+research | Not shown on page | Seattle, WA | High: systems, performance | High: systems, performance | early-career | Signals: systems, performance |
+| 2026-04-07 | Microsoft | Join us at the forefront of research at Microsoft | https://info.microsoft.com/ww-landing-microsoft-research-newsletter.html?wt.mc_id=S-webpage_msr-homepage | Not shown on page | Not shown on page | High: systems | High: systems | early-career | Signals: systems |
+| 2026-04-07 | Atlassian | Empower engineers. Inspire productivity. | https://www.atlassian.com/software/compass | Not shown on page | Not shown on page | High: performance | High: performance | early-career | Signals: performance |
+| 2026-04-07 | Canva | [Source fetch failed] Canva Careers | https://www.canva.com/careers/ | Unavailable | Unavailable | Low | Low | low-priority | Source fetch failed: 403 Client Error: Forbidden for url: https://www.canva.com/careers/ |
+| 2026-04-07 | OpenAI | [Source fetch failed] OpenAI Careers | https://openai.com/careers/ | Unavailable | Unavailable | Low | Low | low-priority | Source fetch failed: 403 Client Error: Forbidden for url: https://openai.com/careers/ |
