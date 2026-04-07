@@ -1,0 +1,126 @@
+{
+  "sources": [
+    {
+      "name": "Anthropic Board",
+      "company": "Anthropic",
+      "url": "https://job-boards.greenhouse.io/anthropic",
+      "allow_domains": ["job-boards.greenhouse.io", "www.anthropic.com"]
+    },
+    {
+      "name": "OpenAI Careers",
+      "company": "OpenAI",
+      "url": "https://openai.com/careers/",
+      "allow_domains": ["openai.com", "www.openai.com"]
+    },
+    {
+      "name": "Databricks Careers",
+      "company": "Databricks",
+      "url": "https://www.databricks.com/company/careers",
+      "allow_domains": ["www.databricks.com", "databricks.com"]
+    },
+    {
+      "name": "Microsoft Research Careers",
+      "company": "Microsoft",
+      "url": "https://www.microsoft.com/en-us/research/careers/",
+      "allow_domains": ["www.microsoft.com", "microsoft.com"]
+    },
+    {
+      "name": "Amazon Jobs Search",
+      "company": "Amazon",
+      "url": "https://www.amazon.jobs/en/search?base_query=software+engineer+applied+scientist+database+systems&country%5B%5D=USA&country%5B%5D=AUS",
+      "allow_domains": ["www.amazon.jobs", "amazon.jobs"]
+    },
+    {
+      "name": "Google Careers Search",
+      "company": "Google",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/?q=phd%20systems%20software%20engineer%20research",
+      "allow_domains": ["www.google.com", "google.com"]
+    },
+    {
+      "name": "Meta Careers Search",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/?q=systems%20research%20engineer",
+      "allow_domains": ["www.metacareers.com", "metacareers.com"]
+    },
+    {
+      "name": "Atlassian Careers",
+      "company": "Atlassian",
+      "url": "https://www.atlassian.com/company/careers/all-jobs",
+      "allow_domains": ["www.atlassian.com", "atlassian.com"]
+    },
+    {
+      "name": "Canva Careers",
+      "company": "Canva",
+      "url": "https://www.canva.com/careers/",
+      "allow_domains": ["www.canva.com", "canva.com"]
+    }
+  ],
+  "company_priority": [
+    "Databricks",
+    "OpenAI",
+    "Anthropic",
+    "Amazon",
+    "Google",
+    "Meta",
+    "Microsoft",
+    "Atlassian",
+    "Canva"
+  ],
+  "role_keywords": [
+    "software engineer",
+    "research engineer",
+    "research scientist",
+    "applied scientist",
+    "data engineer",
+    "data infrastructure",
+    "database",
+    "query",
+    "storage",
+    "systems",
+    "backend",
+    "retrieval",
+    "ml systems",
+    "infrastructure"
+  ],
+  "strong_match_keywords": [
+    "database",
+    "query",
+    "storage",
+    "systems",
+    "data infrastructure",
+    "benchmark",
+    "performance",
+    "retrieval",
+    "index",
+    "backend",
+    "physical design",
+    "data platform"
+  ],
+  "early_career_keywords": [
+    "early career",
+    "new grad",
+    "graduate",
+    "university grad",
+    "entry level",
+    "intern",
+    "internship"
+  ],
+  "exclusion_keywords": [
+    "designer",
+    "product manager",
+    "sales",
+    "recruiter",
+    "marketing",
+    "account executive",
+    "customer success"
+  ],
+  "preferred_locations": [
+    "united states",
+    "usa",
+    "australia",
+    "melbourne",
+    "sydney",
+    "remote",
+    "remote-friendly"
+  ]
+}

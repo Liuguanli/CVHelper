@@ -96,3 +96,32 @@ Git 管理建议：
 - 如果我判断某个岗位特别值得你尽快看，我会同时写进 `market_watch/alerts.md` 并在回复里直接提醒你。
 
 如果后面你愿意，我可以下一步继续帮你把这个结构再升级成“输入一个 JD 就自动生成一套输出”的半自动脚本版本。
+
+## GitHub Actions 岗位巡检
+
+这个仓库现在也可以接 GitHub Actions 做每日岗位巡检。
+
+核心思路：
+
+1. GitHub Actions 每天定时运行 `watch/run_daily_watch.py`
+2. 脚本抓官方 careers / jobs 页面
+3. 把结果写回：
+   - `market_watch/discovered_roles.md`
+   - `market_watch/alerts.md`
+   - `watch/state/seen_jobs.json`
+   - `watch/state/latest_digest.md`
+4. 如果配置了邮箱 secrets，再把摘要发到你的邮箱
+5. GitHub Actions 会把这些更新自动 commit 回仓库
+
+这意味着：
+
+- 结果不会只留在 GitHub Actions 临时机器里
+- 结果会回写到你的仓库
+- 你本地只要 `git pull` 就能同步最新岗位摘要
+
+对应文件：
+
+- 工作流：`.github/workflows/job_watch.yml`
+- 配置：`watch/config.json`
+- 脚本：`watch/run_daily_watch.py`
+- 说明：`watch/README.md`
