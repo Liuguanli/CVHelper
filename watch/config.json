@@ -71,6 +71,24 @@
       "company": "SafetyCulture",
       "url": "https://boards.greenhouse.io/safetyculture",
       "allow_domains": ["boards.greenhouse.io", "safetyculture.com"]
+    },
+    {
+      "name": "MongoDB Careers",
+      "company": "MongoDB",
+      "url": "https://www.mongodb.com/careers",
+      "allow_domains": ["www.mongodb.com", "mongodb.com"]
+    },
+    {
+      "name": "Oracle Australia Careers",
+      "company": "Oracle",
+      "url": "https://www.oracle.com/au/careers/",
+      "allow_domains": ["www.oracle.com", "oracle.com"]
+    },
+    {
+      "name": "Telstra Careers",
+      "company": "Telstra",
+      "url": "https://www.telstra.com.au/careers/LinkedIn",
+      "allow_domains": ["www.telstra.com.au", "telstra.com.au"]
     }
   ],
   "company_priority": [
@@ -83,6 +101,9 @@
     "Microsoft",
     "Atlassian",
     "Canva",
+    "MongoDB",
+    "Oracle",
+    "Telstra",
     "Airwallex",
     "Xero",
     "SafetyCulture"

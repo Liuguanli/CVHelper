@@ -67,7 +67,7 @@ git pull
 
 - 这是一个“最小可运行版”
 - 它优先抓官方 careers 页面和 job boards
-- 已额外纳入部分澳洲技术公司来源，例如 Atlassian、Canva、Airwallex、Xero、SafetyCulture
+- 已额外纳入部分澳洲和亚太相关技术公司来源，例如 Atlassian、Canva、MongoDB、Microsoft、Oracle、Telstra、Airwallex、Xero、SafetyCulture
 - 不同公司页面结构差异很大，所以解析是 best-effort
 - 如果某些页面抓不到发布日期，结果里会明确写 `Not shown on page`
 - 后面可以逐步为 Databricks / OpenAI / Amazon / Google 单独做更强的解析器
