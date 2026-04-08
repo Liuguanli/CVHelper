@@ -1,6 +1,6 @@
 Daily Job Watch Digest - 2026-04-09
 ====================================
-New: 0 | Updated: 105 | Tracked: 275 | Failures: 2
+New: 2 | Updated: 3 | Tracked: 277 | Failures: 2
 
 Strong Match
 ------------
@@ -21,7 +21,7 @@ Strong Match
 5   OpenAI        Software Engineer, Habitat (Online Data)    2025-04-14        Seattle                 
     Link: https://jobs.ashbyhq.com/openai/460b4295-3803-4dda-983d-3b0fea0b0fc4
     Fit: High: database, storage, systems | High: database, storage, systems
-6   OpenAI        Backend Software Engineer, B2B Connectors   2026-03-26        San Francisco, New York…
+6   OpenAI        Backend Software Engineer, B2B Connectors   2026-03-26        San Francisco, Remote   
     Link: https://jobs.ashbyhq.com/openai/cbacb6bd-aa41-41af-a5d5-13515a1be72b
     Fit: High: storage, systems, retrieval | High: storage, systems, retrieval
 7   OpenAI        Backend Software Engineer, ChatGPT Engine…  2026-02-03        San Francisco           
