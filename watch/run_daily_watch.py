@@ -102,6 +102,29 @@ TITLE_REQUIRED_TOKENS = [
     "architect",
 ]
 
+EARLY_CAREER_TITLE_KEYWORDS = [
+    "early career",
+    "new grad",
+    "graduate",
+    "university grad",
+    "entry level",
+    "intern",
+    "internship",
+    "student",
+]
+
+SENIORITY_TITLE_KEYWORDS = [
+    "senior",
+    "staff",
+    "principal",
+    "manager",
+    "director",
+    "head of",
+    "lead ",
+    "vp ",
+    "vice president",
+]
+
 JOB_PAGE_SIGNALS = [
     "responsibilities",
     "qualifications",
@@ -549,9 +572,11 @@ def score_job(title: str, text: str, config: dict) -> tuple[int, str, str, str, 
 
     role_hits = [term for term in config["role_keywords"] if term in content]
     strong_hits = [term for term in config["strong_match_keywords"] if term in content]
-    early_hits = [term for term in config["early_career_keywords"] if term in content]
+    early_hits = [term for term in config["early_career_keywords"] if term in lower_title]
     location_hits = [term for term in config["preferred_locations"] if term in content]
     title_hits = [term for term in TITLE_ROLE_KEYWORDS if term in lower_title]
+    has_early_title_signal = any(term in lower_title for term in EARLY_CAREER_TITLE_KEYWORDS)
+    has_seniority_title_signal = any(term in lower_title for term in SENIORITY_TITLE_KEYWORDS)
 
     score += 6 * len(role_hits)
     score += 8 * len(strong_hits)
@@ -572,7 +597,7 @@ def score_job(title: str, text: str, config: dict) -> tuple[int, str, str, str, 
         resume_fit = "Low"
         research_fit = "Low"
 
-    if any(term in content for term in ["intern", "internship", "new grad", "graduate", "early career", "entry level"]):
+    if has_early_title_signal and not has_seniority_title_signal:
         category = "Early-Career / New Grad"
     elif score >= 45:
         category = "Strong Match"
@@ -634,12 +659,13 @@ def collect_jobs(config: dict) -> list[Job]:
         existing = deduped.get(job.url)
         if existing is None or job.score > existing.score:
             deduped[job.url] = job
+    company_rank = {name: idx for idx, name in enumerate(config.get("company_priority", []))}
     return sorted(
         deduped.values(),
         key=lambda job: (
             {"high-priority": 0, "worth-trying": 1, "early-career": 2, "low-priority": 3}.get(job.priority, 9),
             -job.score,
-            job.company,
+            company_rank.get(job.company, 999),
             job.title,
         ),
     )
@@ -656,6 +682,34 @@ def cleanup_seen_jobs(seen: dict[str, dict]) -> dict[str, dict]:
             continue
         cleaned[normalized_url] = job | {"url": normalized_url}
     return cleaned
+
+
+def diversify_jobs(jobs: list[Job], *, per_company_limit: int = 2, total_limit: int = 8) -> list[Job]:
+    selected: list[Job] = []
+    company_counts: dict[str, int] = {}
+
+    for job in jobs:
+        count = company_counts.get(job.company, 0)
+        if count >= per_company_limit:
+            continue
+        selected.append(job)
+        company_counts[job.company] = count + 1
+        if len(selected) >= total_limit:
+            break
+
+    if len(selected) >= total_limit:
+        return selected
+
+    selected_urls = {job.url for job in selected}
+    for job in jobs:
+        if job.url in selected_urls:
+            continue
+        selected.append(job)
+        selected_urls.add(job.url)
+        if len(selected) >= total_limit:
+            break
+
+    return selected
 
 
 def update_seen_jobs(jobs: list[Job], seen: dict[str, dict], today: str) -> tuple[list[Job], list[Job]]:
@@ -689,6 +743,7 @@ def update_seen_jobs(jobs: list[Job], seen: dict[str, dict], today: str) -> tupl
 
 def render_discovered_roles(jobs: list[Job], today: str) -> str:
     discovered_jobs = [job for job in jobs if not job.title.startswith("[Source fetch failed]")]
+    discovered_jobs = diversify_jobs(discovered_jobs, per_company_limit=3, total_limit=60)
     lines = [
         "# Discovered Similar Roles",
         "",
@@ -714,12 +769,12 @@ def render_alerts(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job],
         "",
     ]
 
-    strong = [job for job in jobs if job.priority == "high-priority"][:10]
-    early = [job for job in jobs if job.priority == "early-career"][:10]
+    strong = diversify_jobs([job for job in jobs if job.priority == "high-priority"], per_company_limit=2, total_limit=10)
+    early = diversify_jobs([job for job in jobs if job.priority == "early-career"], per_company_limit=2, total_limit=10)
 
     if new_jobs:
         lines.extend([f"## {today} - New Roles", ""])
-        for job in new_jobs[:10]:
+        for job in diversify_jobs(new_jobs, per_company_limit=2, total_limit=10):
             lines.extend(
                 [
                     f"### {job.company} - {job.title}",
@@ -734,7 +789,7 @@ def render_alerts(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job],
 
     if updated_jobs:
         lines.extend([f"## {today} - Updated Roles", ""])
-        for job in updated_jobs[:10]:
+        for job in diversify_jobs(updated_jobs, per_company_limit=2, total_limit=10):
             lines.extend(
                 [
                     f"### {job.company} - {job.title}",
@@ -763,9 +818,9 @@ def render_alerts(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job],
 def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job], today: str) -> str:
     fetch_failures = [job for job in jobs if job.title.startswith("[Source fetch failed]")]
     tracked_jobs = [job for job in jobs if not job.title.startswith("[Source fetch failed]")]
-    strong = [job for job in tracked_jobs if job.category == "Strong Match"][:8]
-    stretch = [job for job in tracked_jobs if job.category == "Stretch but Worth Trying"][:8]
-    early = [job for job in tracked_jobs if job.category == "Early-Career / New Grad"][:8]
+    strong = diversify_jobs([job for job in tracked_jobs if job.category == "Strong Match"], per_company_limit=2, total_limit=8)
+    stretch = diversify_jobs([job for job in tracked_jobs if job.category == "Stretch but Worth Trying"], per_company_limit=2, total_limit=8)
+    early = diversify_jobs([job for job in tracked_jobs if job.category == "Early-Career / New Grad"], per_company_limit=2, total_limit=8)
     meaningful_count = len([job for job in tracked_jobs if job.category in {"Strong Match", "Stretch but Worth Trying", "Early-Career / New Grad"}])
 
     lines = [
@@ -826,9 +881,9 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
 def render_latest_digest_html(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job], today: str) -> str:
     fetch_failures = [job for job in jobs if job.title.startswith("[Source fetch failed]")]
     tracked_jobs = [job for job in jobs if not job.title.startswith("[Source fetch failed]")]
-    strong = [job for job in tracked_jobs if job.category == "Strong Match"][:8]
-    stretch = [job for job in tracked_jobs if job.category == "Stretch but Worth Trying"][:8]
-    early = [job for job in tracked_jobs if job.category == "Early-Career / New Grad"][:8]
+    strong = diversify_jobs([job for job in tracked_jobs if job.category == "Strong Match"], per_company_limit=2, total_limit=8)
+    stretch = diversify_jobs([job for job in tracked_jobs if job.category == "Stretch but Worth Trying"], per_company_limit=2, total_limit=8)
+    early = diversify_jobs([job for job in tracked_jobs if job.category == "Early-Career / New Grad"], per_company_limit=2, total_limit=8)
     meaningful_count = len([job for job in tracked_jobs if job.category in {"Strong Match", "Stretch but Worth Trying", "Early-Career / New Grad"}])
 
     def render_table(title: str, bucket: list[Job]) -> str:
