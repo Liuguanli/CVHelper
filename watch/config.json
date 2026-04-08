@@ -3,20 +3,25 @@
     {
       "name": "Anthropic Board",
       "company": "Anthropic",
-      "url": "https://job-boards.greenhouse.io/anthropic",
-      "allow_domains": ["job-boards.greenhouse.io", "www.anthropic.com"]
+      "url": "https://www.anthropic.com/careers/jobs",
+      "allow_domains": ["job-boards.greenhouse.io", "www.anthropic.com"],
+      "source_type": "greenhouse_api",
+      "board_token": "anthropic"
     },
     {
       "name": "OpenAI Careers",
       "company": "OpenAI",
-      "url": "https://openai.com/careers/",
-      "allow_domains": ["openai.com", "www.openai.com"]
+      "url": "https://openai.com/careers/search/",
+      "allow_domains": ["openai.com", "www.openai.com", "jobs.ashbyhq.com"],
+      "source_type": "ashby_api",
+      "board_name": "openai"
     },
     {
       "name": "Databricks Careers",
       "company": "Databricks",
       "url": "https://www.databricks.com/company/careers",
-      "allow_domains": ["www.databricks.com", "databricks.com"]
+      "allow_domains": ["www.databricks.com", "databricks.com"],
+      "source_type": "databricks_html"
     },
     {
       "name": "Microsoft Research Careers",
@@ -34,7 +39,8 @@
       "name": "Google Careers Search",
       "company": "Google",
       "url": "https://www.google.com/about/careers/applications/jobs/results/?q=phd%20systems%20software%20engineer%20research",
-      "allow_domains": ["www.google.com", "google.com"]
+      "allow_domains": ["www.google.com", "google.com"],
+      "source_type": "google_careers"
     },
     {
       "name": "Meta Careers Search",
@@ -64,13 +70,17 @@
       "name": "Xero Careers",
       "company": "Xero",
       "url": "https://jobs.ashbyhq.com/xero",
-      "allow_domains": ["jobs.ashbyhq.com", "xero.com"]
+      "allow_domains": ["jobs.ashbyhq.com", "xero.com"],
+      "source_type": "ashby_api",
+      "board_name": "xero"
     },
     {
       "name": "SafetyCulture Careers",
       "company": "SafetyCulture",
       "url": "https://boards.greenhouse.io/safetyculture",
-      "allow_domains": ["boards.greenhouse.io", "safetyculture.com"]
+      "allow_domains": ["boards.greenhouse.io", "job-boards.greenhouse.io", "safetyculture.com"],
+      "source_type": "greenhouse_api",
+      "board_token": "safetyculture"
     },
     {
       "name": "MongoDB Careers",
