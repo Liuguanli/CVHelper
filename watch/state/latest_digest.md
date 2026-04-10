@@ -1,6 +1,6 @@
-Daily Job Watch Digest - 2026-04-10
+Daily Job Watch Digest - 2026-04-11
 ====================================
-New: 2 | Updated: 1 | Tracked: 274 | Failures: 2
+New: 0 | Updated: 0 | Tracked: 269 | Failures: 2
 
 Strong Match
 ------------
@@ -12,12 +12,12 @@ Strong Match
 2   OpenAI        Engineering Manager, Online Data Systems    2026-03-16        San Francisco           
     Link: https://jobs.ashbyhq.com/openai/cb050c48-2e42-4dc0-8860-e6b3e5e6baff
     Fit: High: database, query, storage | High: database, query, storage
-3   Xero          Senior Applied Scientist                    2026-04-08        US: San Mateo (1875 Sou…
-    Link: https://jobs.ashbyhq.com/xero/b29b0e7a-bf70-41b6-bd19-db8d5806562f
-    Fit: High: systems, performance | High: systems, performance
-4   Xero          Lead Software Engineer - Mobile             2026-03-12        AU: Melbourne: (260 Bur…
+3   Xero          Lead Software Engineer - Mobile             2026-03-12        AU: Melbourne: (260 Bur…
     Link: https://jobs.ashbyhq.com/xero/7742def0-1f28-45fd-ae88-6648c03c6a29
     Fit: High: systems, performance | High: systems, performance
+4   Xero          Principal Software Engineer - Mobile        2026-03-13        AU: Melbourne: (260 Bur…
+    Link: https://jobs.ashbyhq.com/xero/ef013117-4e51-4d60-81e3-6dd78f9cbede
+    Fit: High: performance, backend | High: performance, backend
 5   OpenAI        Software Engineer, Habitat (Online Data)    2025-04-14        Seattle                 
     Link: https://jobs.ashbyhq.com/openai/460b4295-3803-4dda-983d-3b0fea0b0fc4
     Fit: High: database, storage, systems | High: database, storage, systems
