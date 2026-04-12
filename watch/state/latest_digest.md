@@ -1,6 +1,6 @@
-Daily Job Watch Digest - 2026-04-12
+Daily Job Watch Digest - 2026-04-13
 ====================================
-New: 2 | Updated: 0 | Tracked: 270 | Failures: 2
+New: 0 | Updated: 0 | Tracked: 270 | Failures: 2
 
 Strong Match
 ------------
