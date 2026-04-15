@@ -1,53 +1,80 @@
 # Alerts
 
-Last updated: 2026-04-15
+Last updated: 2026-04-16
 
-## 2026-04-15 - New Roles
+## 2026-04-16 - New Roles
 
-### OpenAI - Software Engineer, Foundations Retrieval
-- URL: https://jobs.ashbyhq.com/openai/40ed6975-ef61-4807-b748-37c2fa2b76c7
-- Posted / Updated: 2026-04-14
-- Why it stands out: Signals: query, systems, performance, retrieval
-- Resume fit: High: query, systems, performance
-- Research fit: High: query, systems, performance
+### OpenAI - ChatGPT Performance Engineer
+- URL: https://jobs.ashbyhq.com/openai/38ddaa2c-a490-427a-8457-0e92bf00138c
+- Posted / Updated: 2026-04-15
+- Why it stands out: Signals: database, storage, systems, benchmark
+- Resume fit: High: database, storage, systems
+- Research fit: High: database, storage, systems
 
-### OpenAI - Workday Engineer
-- URL: https://jobs.ashbyhq.com/openai/f6880901-6527-4b71-9f70-bc8d38989b84
-- Posted / Updated: 2026-04-14
-- Why it stands out: Signals: systems, performance
-- Resume fit: High: systems, performance
-- Research fit: High: systems, performance
+### OpenAI - Software Engineer, Security Observability
+- URL: https://jobs.ashbyhq.com/openai/1e4e9985-babf-4bd9-8fe8-a2016250780d
+- Posted / Updated: 2026-04-15
+- Why it stands out: Signals: database, systems
+- Resume fit: High: database, systems
+- Research fit: High: database, systems
 
-### OpenAI - Manufacturing Test Engineer, AI Compute Infrastructure - Stargate
-- URL: https://jobs.ashbyhq.com/openai/8a950265-0527-48f8-be3c-2923d7d96940
-- Posted / Updated: 2026-04-13
+### Xero - Engineering Manager - Platform
+- URL: https://jobs.ashbyhq.com/xero/bbf3e18f-3e51-427d-a666-321a41b127b7
+- Posted / Updated: 2026-04-15
 - Why it stands out: Signals: systems
 - Resume fit: High: systems
 - Research fit: High: systems
 
-## 2026-04-15 - Updated Roles
+### Xero - Engineering Manager - Platform
+- URL: https://jobs.ashbyhq.com/xero/4fd1ba9f-a4ce-4392-aec5-fc6677e06ec9
+- Posted / Updated: 2026-04-15
+- Why it stands out: Signals: systems
+- Resume fit: High: systems
+- Research fit: High: systems
 
-### OpenAI - Research Engineer / Research Scientist - Foundations Retrieval
-- URL: https://jobs.ashbyhq.com/openai/020b2aae-8be0-408c-ab49-20eefa8541af
-- Posted / Updated: 2025-06-16
-- Why it stands out: Signals: systems, performance, retrieval, index
-
-### OpenAI - Software Engineer, Identity Platform
-- URL: https://jobs.ashbyhq.com/openai/10980026-e468-4516-958c-7c697793d1d4
-- Posted / Updated: 2023-05-16
+### OpenAI - Software Engineer, Infrastructure, Consumer Devices
+- URL: https://jobs.ashbyhq.com/openai/3544fb7b-669b-43e3-8828-94972620bac7
+- Posted / Updated: 2026-04-15
 - Why it stands out: Signals: systems, performance
+- Resume fit: High: systems, performance
+- Research fit: High: systems, performance
 
-### OpenAI - Software Engineer, Delivery / CD
-- URL: https://jobs.ashbyhq.com/openai/e14fc37c-7ae5-4a6b-ba0d-a36860cf9bb2
+### OpenAI - Software Engineer, Full Stack, Integrity Foundations
+- URL: https://jobs.ashbyhq.com/openai/c4f90594-d61b-4b78-997e-0b12ff998e50
 - Posted / Updated: 2026-04-14
 - Why it stands out: Signals: systems
+- Resume fit: High: systems
+- Research fit: High: systems
 
-### OpenAI - Strategy and Operations, Forward Deployed Engineering (FDE)
-- URL: https://jobs.ashbyhq.com/openai/976939e9-e072-4a24-abdb-84cf29a564c6
-- Posted / Updated: 2026-03-11
+### OpenAI - Intelligence Systems - Technical Staff
+- URL: https://jobs.ashbyhq.com/openai/d4a191f9-58f6-4c89-95f0-0c23ea59a8e4
+- Posted / Updated: 2026-04-15
 - Why it stands out: Signals: systems
+- Resume fit: High: systems
+- Research fit: High: systems
 
-## 2026-04-15 - Strong Match Snapshot
+### Xero - Engineering Manager - Mobile
+- URL: https://jobs.ashbyhq.com/xero/a97a9c69-dc1e-4c58-95d6-733ef6ff3589
+- Posted / Updated: 2026-04-15
+- Why it stands out: Signals: systems
+- Resume fit: High: systems
+- Research fit: High: systems
+
+### OpenAI - Optical Network Engineer
+- URL: https://jobs.ashbyhq.com/openai/1c92378f-c553-4711-8d06-00c9f834c699
+- Posted / Updated: 2026-03-18
+- Why it stands out: Signals: systems, performance
+- Resume fit: High: systems, performance
+- Research fit: High: systems, performance
+
+### OpenAI - Manager, Technical Deployment Leads (TDL), Forward Deployed Engineering (FDE)
+- URL: https://jobs.ashbyhq.com/openai/eed8496c-8e12-4d14-b8b6-6dadff0463a6
+- Posted / Updated: 2026-04-15
+- Why it stands out: Signals: systems, performance
+- Resume fit: High: systems, performance
+- Research fit: High: systems, performance
+
+## 2026-04-16 - Strong Match Snapshot
 
 - OpenAI: Software Engineer, Database Systems | 2025-07-29 | San Francisco
 - OpenAI: Engineering Manager, Online Data Systems | 2026-03-16 | San Francisco
@@ -60,7 +87,7 @@ Last updated: 2026-04-15
 - OpenAI: Senior Software Engineer, Data Acquisition | 2023-09-25 | San Francisco
 - OpenAI: Software Engineer, Data Acquisition | 2023-09-22 | San Francisco
 
-## 2026-04-15 - Early-Career Snapshot
+## 2026-04-16 - Early-Career Snapshot
 
 - OpenAI: Research Scientist / Research Engineer — Early Career Cohort | 2026-03-19 | San Francisco
 - OpenAI: Software Engineer, Internal Applications - Enterprise | 2026-01-23 | San Francisco, Remote

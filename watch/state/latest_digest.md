@@ -1,6 +1,6 @@
-Daily Job Watch Digest - 2026-04-15
+Daily Job Watch Digest - 2026-04-16
 ====================================
-New: 3 | Updated: 4 | Tracked: 267 | Failures: 2
+New: 12 | Updated: 0 | Tracked: 275 | Failures: 2
 
 Strong Match
 ------------
@@ -44,9 +44,9 @@ Stretch but Worth Trying
 3   Xero          Engineering Manager                         2026-04-13        UK: London (7 Devonshir…
     Link: https://jobs.ashbyhq.com/xero/2cf92322-2b87-43c4-9b6a-2a4aeea0033c
     Fit: High: systems, performance | High: systems, performance
-4   Xero          VP Engineering                              2026-04-02        CAN: British Columbia R…
-    Link: https://jobs.ashbyhq.com/xero/ed4797ed-3ff6-4cb8-a5cb-a8331fc12a3e
-    Fit: High: systems, performance | High: systems, performance
+4   Xero          Engineering Manager - Platform              2026-04-15        AU: Melbourne: (260 Bur…
+    Link: https://jobs.ashbyhq.com/xero/bbf3e18f-3e51-427d-a666-321a41b127b7
+    Fit: High: systems | High: systems
 5   OpenAI        Researcher, Health AI                       2025-01-29        San Francisco           
     Link: https://jobs.ashbyhq.com/openai/bcbe08e3-9593-431d-bc99-37e35e035742
     Fit: High: systems | High: systems
