@@ -1,6 +1,6 @@
-Daily Job Watch Digest - 2026-04-17
+Daily Job Watch Digest - 2026-04-18
 ====================================
-New: 0 | Updated: 5 | Tracked: 274 | Failures: 2
+New: 2 | Updated: 2 | Tracked: 271 | Failures: 2
 
 Strong Match
 ------------
@@ -24,12 +24,12 @@ Strong Match
 6   OpenAI        Software Engineer, Infrastructure - Analy…  2026-04-11        San Francisco, Remote   
     Link: https://jobs.ashbyhq.com/openai/e44bfa94-0b82-4d0c-b224-02155b76eea9
     Fit: High: database, query, storage | High: database, query, storage
-7   OpenAI        Backend Software Engineer, B2B Connectors   2026-03-26        San Francisco, Remote   
-    Link: https://jobs.ashbyhq.com/openai/cbacb6bd-aa41-41af-a5d5-13515a1be72b
-    Fit: High: storage, systems, retrieval | High: storage, systems, retrieval
-8   OpenAI        Backend Software Engineer, ChatGPT Engine…  2026-02-03        San Francisco           
+7   OpenAI        Backend Software Engineer, ChatGPT Engine…  2026-02-03        San Francisco           
     Link: https://jobs.ashbyhq.com/openai/17e31e56-418a-43bb-a72a-1b935dc71e29
     Fit: High: storage, systems, performance | High: storage, systems, performance
+8   OpenAI        Senior Software Engineer, Data Acquisition  2023-09-25        San Francisco           
+    Link: https://jobs.ashbyhq.com/openai/70c63d7a-df6f-48f0-b529-f02221e3dc23
+    Fit: High: database, storage, systems | High: database, storage, systems
 
 Stretch but Worth Trying
 ------------------------

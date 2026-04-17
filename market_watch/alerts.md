@@ -1,35 +1,36 @@
 # Alerts
 
-Last updated: 2026-04-17
+Last updated: 2026-04-18
 
-## 2026-04-17 - Updated Roles
+## 2026-04-18 - New Roles
 
-### OpenAI - Connectivity Software Engineer, Consumer Devices
-- URL: https://jobs.ashbyhq.com/openai/9b2c68f2-5ce8-44f9-a30c-d8016ac66d86
-- Posted / Updated: 2025-10-16
-- Why it stands out: Signals: systems, performance
+### OpenAI - Software Engineer, Kernel Performance & AI Tooling
+- URL: https://jobs.ashbyhq.com/openai/e9627fa6-ac76-4899-9a93-9251419e61a0
+- Posted / Updated: 2026-04-17
+- Why it stands out: Signals: systems, benchmark, performance
+- Resume fit: High: systems, benchmark, performance
+- Research fit: High: systems, benchmark, performance
 
-### OpenAI - Operating Systems Engineer | Consumer Devices
-- URL: https://jobs.ashbyhq.com/openai/efed424b-e025-400f-8ac3-73e962b85751
-- Posted / Updated: 2026-04-16
-- Why it stands out: Signals: storage, systems, performance
-
-### Xero - Engineering Manager - Infrastructure
-- URL: https://jobs.ashbyhq.com/xero/bbf3e18f-3e51-427d-a666-321a41b127b7
-- Posted / Updated: 2026-04-15
+### OpenAI - Software Engineer, Engineering Acceleration | Consumer Devices
+- URL: https://jobs.ashbyhq.com/openai/ae3a32af-b862-45db-838c-7fb49d4bc27e
+- Posted / Updated: 2026-04-17
 - Why it stands out: Signals: systems
+- Resume fit: High: systems
+- Research fit: High: systems
 
-### Xero - Engineering Manager - Infrastructure
-- URL: https://jobs.ashbyhq.com/xero/4fd1ba9f-a4ce-4392-aec5-fc6677e06ec9
-- Posted / Updated: 2026-04-15
-- Why it stands out: Signals: systems
+## 2026-04-18 - Updated Roles
 
-### Xero - Head of Engineering
-- URL: https://jobs.ashbyhq.com/xero/52f4588c-ae6c-446e-9d5b-290a5061b1ad
-- Posted / Updated: 2026-04-16
-- Why it stands out: General relevance only
+### OpenAI - Backend Software Engineer, Enterprise AI Platform
+- URL: https://jobs.ashbyhq.com/openai/2f4ded22-dcc4-4e2c-94be-ca824071a7b7
+- Posted / Updated: 2025-12-17
+- Why it stands out: Signals: systems, performance, backend
 
-## 2026-04-17 - Strong Match Snapshot
+### OpenAI - Product Engineer, Full Stack - ChatGPT Enterprise
+- URL: https://jobs.ashbyhq.com/openai/2f8a9267-6fdf-4067-b162-d219b844268c
+- Posted / Updated: 2026-03-27
+- Why it stands out: Signals: database, systems, performance, backend
+
+## 2026-04-18 - Strong Match Snapshot
 
 - OpenAI: Software Engineer, Database Systems | 2025-07-29 | San Francisco
 - OpenAI: Engineering Manager, Online Data Systems | 2026-03-16 | San Francisco
@@ -37,12 +38,12 @@ Last updated: 2026-04-17
 - Xero: Senior Engineer - Tooling | 2026-02-10 | AU: Melbourne: (260 Burwood Rd), AU: Sydney (45 Clarence St), Remote
 - OpenAI: Software Engineer, Habitat (Online Data) | 2025-04-14 | Seattle
 - OpenAI: Software Engineer, Infrastructure - Analytics Platform | 2026-04-11 | San Francisco, Remote
-- OpenAI: Backend Software Engineer, B2B Connectors | 2026-03-26 | San Francisco, Remote
 - OpenAI: Backend Software Engineer, ChatGPT Engineering | 2026-02-03 | San Francisco
 - OpenAI: Senior Software Engineer, Data Acquisition | 2023-09-25 | San Francisco
 - OpenAI: Software Engineer, Data Acquisition | 2023-09-22 | San Francisco
+- OpenAI: Principal Software Engineer, B2B Engineering | 2026-03-23 | Remote - US
 
-## 2026-04-17 - Early-Career Snapshot
+## 2026-04-18 - Early-Career Snapshot
 
 - OpenAI: Research Scientist / Research Engineer — Early Career Cohort | 2026-03-19 | San Francisco
 - OpenAI: Software Engineer, Internal Applications - Enterprise | 2026-01-23 | San Francisco, Remote
