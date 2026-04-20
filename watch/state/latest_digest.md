@@ -1,6 +1,6 @@
-Daily Job Watch Digest - 2026-04-20
+Daily Job Watch Digest - 2026-04-21
 ====================================
-New: 2 | Updated: 0 | Tracked: 273 | Failures: 2
+New: 8 | Updated: 1 | Tracked: 281 | Failures: 2
 
 Strong Match
 ------------
@@ -41,12 +41,12 @@ Stretch but Worth Trying
 2   OpenAI        Reliability/DFX Engineer                    2025-09-17        San Francisco           
     Link: https://jobs.ashbyhq.com/openai/b2c5f3d7-5dfd-45f6-a4fa-fa372f5875a5
     Fit: High: systems, performance | High: systems, performance
-3   Xero          Engineering Manager                         2026-04-13        UK: London (7 Devonshir…
+3   Xero          Principal Engineer                          2026-04-20        AU: Melbourne: (260 Bur…
+    Link: https://jobs.ashbyhq.com/xero/c00839ba-9158-4fbf-99ad-71461129d258
+    Fit: High: systems, performance | High: systems, performance
+4   Xero          Engineering Manager                         2026-04-13        UK: London (7 Devonshir…
     Link: https://jobs.ashbyhq.com/xero/2cf92322-2b87-43c4-9b6a-2a4aeea0033c
     Fit: High: systems, performance | High: systems, performance
-4   Xero          Engineering Manager - Infrastructure        2026-04-15        AU: Melbourne: (260 Bur…
-    Link: https://jobs.ashbyhq.com/xero/bbf3e18f-3e51-427d-a666-321a41b127b7
-    Fit: High: systems | High: systems
 5   OpenAI        Researcher, Health AI                       2025-01-29        San Francisco           
     Link: https://jobs.ashbyhq.com/openai/bcbe08e3-9593-431d-bc99-37e35e035742
     Fit: High: systems | High: systems
