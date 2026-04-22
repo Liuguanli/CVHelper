@@ -13,7 +13,7 @@
     "research_fit": "High: database, query, storage",
     "notes": "Signals: database, query, storage, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/17e31e56-418a-43bb-a72a-1b935dc71e29": {
     "company": "OpenAI",
@@ -29,7 +29,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance, retrieval",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/70c63d7a-df6f-48f0-b529-f02221e3dc23": {
     "company": "OpenAI",
@@ -45,7 +45,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/41d9d129-2e58-4ad3-be81-2e5096f4da4d": {
     "company": "OpenAI",
@@ -61,7 +61,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f763c6b3-5167-4a67-b691-4c3fa2c44156": {
     "company": "OpenAI",
@@ -77,7 +77,7 @@
     "research_fit": "High: storage, systems, data infrastructure",
     "notes": "Signals: storage, systems, data infrastructure, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a97e89f0-67ad-41c9-a2d3-f64c4ab9a732": {
     "company": "OpenAI",
@@ -93,7 +93,7 @@
     "research_fit": "High: database, systems, retrieval",
     "notes": "Signals: database, systems, retrieval, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7649205e-20dc-4bb4-9358-69474a851132": {
     "company": "OpenAI",
@@ -109,7 +109,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4a13c764-18c3-4076-ac87-29e05491be07": {
     "company": "OpenAI",
@@ -125,7 +125,7 @@
     "research_fit": "High: storage, systems, data infrastructure",
     "notes": "Signals: storage, systems, data infrastructure, data platform",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/da07ba71-81fd-47c7-adb1-2b2d1eaed325": {
     "company": "OpenAI",
@@ -141,7 +141,7 @@
     "research_fit": "High: storage, systems, data infrastructure",
     "notes": "Signals: storage, systems, data infrastructure, data platform",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/07153f7c-7e8b-4283-a879-cb07a224e083": {
     "company": "OpenAI",
@@ -157,7 +157,7 @@
     "research_fit": "High: storage, systems, data infrastructure",
     "notes": "Signals: storage, systems, data infrastructure, index",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/130a5389-83e1-493f-9205-542d3ff53afb": {
     "company": "OpenAI",
@@ -173,7 +173,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/9d11e1d8-af1d-413b-873f-d8fac2bdee99": {
     "company": "OpenAI",
@@ -189,7 +189,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a20b7fc6-6f01-4618-ba35-37b40083f93e": {
     "company": "OpenAI",
@@ -205,7 +205,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/b7a2e30f-c5f6-4710-b53e-64d64bcce189": {
     "company": "OpenAI",
@@ -221,7 +221,7 @@
     "research_fit": "High: systems, data infrastructure, performance",
     "notes": "Signals: systems, data infrastructure, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/98ad9beb-4f91-496c-bd16-ac0b2a8d5bb2": {
     "company": "OpenAI",
@@ -237,7 +237,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/823a05bf-33fb-4d94-9dd8-571723d27b1a": {
     "company": "OpenAI",
@@ -253,7 +253,7 @@
     "research_fit": "High: query, systems, performance",
     "notes": "Signals: query, systems, performance, data platform",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7ade7a12-845c-4e3a-af23-c028420bd181": {
     "company": "OpenAI",
@@ -269,7 +269,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/295506f0-c4f7-4890-af93-08d4384a3330": {
     "company": "OpenAI",
@@ -285,7 +285,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/99121e6d-a542-4881-968f-4cd89d9f583c": {
     "company": "OpenAI",
@@ -317,7 +317,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/23014bc8-37d4-4fd9-9a77-d95fdd33437f": {
     "company": "OpenAI",
@@ -333,7 +333,7 @@
     "research_fit": "High: storage, systems, benchmark",
     "notes": "Signals: storage, systems, benchmark, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/7742def0-1f28-45fd-ae88-6648c03c6a29": {
     "company": "Xero",
@@ -349,7 +349,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/8e301350-62fb-4251-bc34-c7036498f08c": {
     "company": "OpenAI",
@@ -365,7 +365,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/23b158fe-709e-4bf5-856c-d10953d32f60": {
     "company": "OpenAI",
@@ -381,7 +381,7 @@
     "research_fit": "High: systems, backend, data platform",
     "notes": "Signals: systems, backend, data platform",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a58add97-1968-4d5c-b504-ab62bea12df3": {
     "company": "OpenAI",
@@ -397,7 +397,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/ebc65e7d-d86a-4066-aa82-3a7758d97bb6": {
     "company": "OpenAI",
@@ -413,7 +413,7 @@
     "research_fit": "High: storage, systems, data infrastructure",
     "notes": "Signals: storage, systems, data infrastructure, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/5f6685ad-2fba-4e60-8982-fa142b33e194": {
     "company": "OpenAI",
@@ -429,7 +429,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/793964ae-d40b-45e3-9798-84f4b6da48c5": {
     "company": "OpenAI",
@@ -445,7 +445,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/22781653-051b-4c75-8725-b80233c67b1e": {
     "company": "OpenAI",
@@ -461,7 +461,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/dd2025b9-4d18-4ad7-a78c-7a643419ecc5": {
     "company": "OpenAI",
@@ -477,7 +477,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/679cc2c7-e153-480b-8b9f-ecb69a19975a": {
     "company": "OpenAI",
@@ -493,7 +493,7 @@
     "research_fit": "High: systems, benchmark, performance",
     "notes": "Signals: systems, benchmark, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/1c516e9f-c97d-4a40-8529-9871dac615a5": {
     "company": "OpenAI",
@@ -509,7 +509,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/988bf175-3219-4e75-baa6-52ecd147ea0f": {
     "company": "OpenAI",
@@ -557,7 +557,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4349f80b-3518-4e4d-b9eb-3e5e9b490cc7": {
     "company": "OpenAI",
@@ -573,7 +573,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/ef013117-4e51-4d60-81e3-6dd78f9cbede": {
     "company": "Xero",
@@ -621,7 +621,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e6981259-c1d0-46de-8376-56bde28cfb10": {
     "company": "OpenAI",
@@ -629,7 +629,7 @@
     "title": "Software Engineer, ChatGPT Infrastructure",
     "url": "https://jobs.ashbyhq.com/openai/e6981259-c1d0-46de-8376-56bde28cfb10",
     "location": "San Francisco, Remote",
-    "posted_or_updated": "2026-02-23",
+    "posted_or_updated": "2026-04-21",
     "score": 62,
     "priority": "high-priority",
     "category": "Strong Match",
@@ -637,7 +637,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-15"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/775240dd-6d36-401a-acca-128df0459610": {
     "company": "OpenAI",
@@ -653,7 +653,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/5931abef-191b-417e-89f1-1d06f00e908c": {
     "company": "OpenAI",
@@ -669,7 +669,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/ace42c6d-8663-4b30-9337-ec70cf071d73": {
     "company": "OpenAI",
@@ -685,7 +685,7 @@
     "research_fit": "High: storage, systems",
     "notes": "Signals: storage, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/9708b52d-909d-4a3c-a21e-f8043c3679ce": {
     "company": "OpenAI",
@@ -701,7 +701,7 @@
     "research_fit": "High: systems, performance, index",
     "notes": "Signals: systems, performance, index",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/d7efc55b-2fde-4d3f-ae34-2e467f02a57c": {
     "company": "OpenAI",
@@ -717,7 +717,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/633d5574-92e4-4327-9783-7ea831223dea": {
     "company": "OpenAI",
@@ -733,7 +733,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/991948b7-0305-4125-bb9a-625f5bc24189": {
     "company": "OpenAI",
@@ -749,7 +749,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/1ba666a4-0be2-4bd0-ad51-39ed7164c241": {
     "company": "OpenAI",
@@ -765,7 +765,7 @@
     "research_fit": "High: storage, systems",
     "notes": "Signals: storage, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/69417f32-b564-471b-acdf-f0330bd7074e": {
     "company": "OpenAI",
@@ -781,7 +781,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e45e0ff2-12f1-4c12-a4a3-c93406dad33f": {
     "company": "OpenAI",
@@ -829,7 +829,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/9c55e073-886d-466a-86a3-435a291e19d2": {
     "company": "OpenAI",
@@ -845,7 +845,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c51e48ce-31ad-4176-a6d5-4a785b44ab73": {
     "company": "OpenAI",
@@ -861,7 +861,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c6c4c2fb-cb2c-45d4-9f7c-e3356cd534d7": {
     "company": "OpenAI",
@@ -877,7 +877,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/0fc4742f-21f9-40a3-925e-adeb0a6920c1": {
     "company": "OpenAI",
@@ -893,7 +893,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7daff2af-1686-43fe-85c0-ca912c8747ac": {
     "company": "OpenAI",
@@ -909,7 +909,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e71cf565-4b21-4b0d-bf45-b22e58ca95eb": {
     "company": "OpenAI",
@@ -925,7 +925,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/6fbb72e6-1d69-4863-aaf3-3c5830e49e8a": {
     "company": "OpenAI",
@@ -941,7 +941,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/efed424b-e025-400f-8ac3-73e962b85751": {
     "company": "OpenAI",
@@ -957,7 +957,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/b073abb1-cf6c-4fd9-a318-732fdd2f1408": {
     "company": "OpenAI",
@@ -973,7 +973,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7e198d81-34e0-48b6-b64e-a501a75f9d53": {
     "company": "OpenAI",
@@ -989,7 +989,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/6eb386ac-9056-4795-aa79-a27e105faf5c": {
     "company": "OpenAI",
@@ -1005,7 +1005,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c9fd2911-586b-45b2-80ea-2078ce6dafff": {
     "company": "OpenAI",
@@ -1021,7 +1021,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2115c524-07dd-401c-8549-5598ce5cbc9c": {
     "company": "OpenAI",
@@ -1053,7 +1053,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/bdd7d3ae-0921-45e5-8e8b-0846e9a402e1": {
     "company": "OpenAI",
@@ -1069,7 +1069,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f386b209-1259-4b79-bf5a-aa97fc7ce77b": {
     "company": "OpenAI",
@@ -1085,7 +1085,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/778e3a4f-c318-4a79-a745-00e722e5ee47": {
     "company": "OpenAI",
@@ -1101,7 +1101,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4d14449e-5e7f-45d4-b103-8776a6c87086": {
     "company": "OpenAI",
@@ -1117,7 +1117,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/46703db4-6023-4ac6-93a8-22dc95009945": {
     "company": "OpenAI",
@@ -1133,7 +1133,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/fb5862cc-244c-410b-b287-47df89ad1e43": {
     "company": "OpenAI",
@@ -1149,7 +1149,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/8d723295-f17b-48d1-a418-94722d85f2e8": {
     "company": "Xero",
@@ -1181,7 +1181,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7f9eb43b-423e-43e4-9f42-d14b8ba0f234": {
     "company": "OpenAI",
@@ -1197,7 +1197,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/3ce0949d-b028-44f1-983c-446bb7bb1881": {
     "company": "OpenAI",
@@ -1213,7 +1213,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/72b19062-4ceb-4855-a8e7-fac0c37df508": {
     "company": "OpenAI",
@@ -1245,12 +1245,12 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/d9e942a7-a84e-4fb2-8fea-b976a1abaa68": {
     "company": "OpenAI",
     "source": "OpenAI Careers",
-    "title": "Research Engineer, SLAM & Multi-View Geometry",
+    "title": "Research Engineer, 3D & Multi-View Geometry",
     "url": "https://jobs.ashbyhq.com/openai/d9e942a7-a84e-4fb2-8fea-b976a1abaa68",
     "location": "San Francisco, Remote",
     "posted_or_updated": "2026-03-10",
@@ -1261,7 +1261,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/988016e1-de50-42be-925a-438b97291c5d": {
     "company": "OpenAI",
@@ -1277,7 +1277,7 @@
     "research_fit": "High: database, systems",
     "notes": "Signals: database, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/5431666c-530b-49c0-b67e-32477f9eaf5e": {
     "company": "OpenAI",
@@ -1293,7 +1293,7 @@
     "research_fit": "High: database, systems",
     "notes": "Signals: database, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/b2fd550d-3e04-434e-bb91-c5b7bc8ac8b7": {
     "company": "OpenAI",
@@ -1309,7 +1309,7 @@
     "research_fit": "High: database, systems",
     "notes": "Signals: database, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c47bd03b-800f-4e17-8240-e83c68766937": {
     "company": "OpenAI",
@@ -1325,7 +1325,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/577e6673-0a4a-491b-9a0d-facbdd3bdf3c": {
     "company": "OpenAI",
@@ -1341,7 +1341,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/eda4a2d1-682f-418e-8055-222eaf7c9abd": {
     "company": "OpenAI",
@@ -1357,7 +1357,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/45ab8896-06bd-4c8e-bb76-914483d5d180": {
     "company": "OpenAI",
@@ -1373,7 +1373,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/059ac93e-3fc9-42e9-a4f4-367c0fd5de14": {
     "company": "OpenAI",
@@ -1389,7 +1389,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/8f1b8c6b-b414-4026-a434-6ca32c3b3e0d": {
     "company": "OpenAI",
@@ -1405,7 +1405,7 @@
     "research_fit": "High: storage, systems",
     "notes": "Signals: storage, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/240d459b-696d-43eb-8497-fab3e56ecd9b": {
     "company": "OpenAI",
@@ -1421,7 +1421,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/d1425d2b-0c54-4fc9-8e21-fc8b9ae60238": {
     "company": "OpenAI",
@@ -1453,7 +1453,7 @@
     "research_fit": "High: systems, index",
     "notes": "Signals: systems, index",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/5f0c6579-0bfb-4a06-8a43-1dd371499e10": {
     "company": "OpenAI",
@@ -1469,7 +1469,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/29dc246a-2240-4843-8050-463c8ecc726a": {
     "company": "OpenAI",
@@ -1485,7 +1485,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/97d3670c-e75a-4bb2-a235-171765f5f10e": {
     "company": "OpenAI",
@@ -1501,7 +1501,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f51f750f-a737-4441-8f96-30133a2a8049": {
     "company": "OpenAI",
@@ -1517,7 +1517,7 @@
     "research_fit": "High: storage, systems",
     "notes": "Signals: storage, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f6dfb6c0-44af-4512-af8c-967b8bb12867": {
     "company": "OpenAI",
@@ -1533,7 +1533,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/340c0c22-8d8f-4232-b17e-f642b64c25c3": {
     "company": "OpenAI",
@@ -1549,7 +1549,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/16df5b48-917d-41d8-b0c6-dbfdf11400f7": {
     "company": "OpenAI",
@@ -1565,7 +1565,7 @@
     "research_fit": "High: systems, benchmark",
     "notes": "Signals: systems, benchmark",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/71655236-0303-42aa-9135-b2f27f2457ab": {
     "company": "OpenAI",
@@ -1581,7 +1581,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/941bad28-7abe-43c7-b20a-2bc7e5b3c6e8": {
     "company": "OpenAI",
@@ -1597,7 +1597,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/b9dee2a0-9bb3-447e-9bce-2b1bed784e5b": {
     "company": "OpenAI",
@@ -1613,7 +1613,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/12342ebb-dcd4-45e2-b875-fc5447fdb7d8": {
     "company": "OpenAI",
@@ -1629,7 +1629,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/29c2c171-fb63-4985-9ac5-229b2ff5ced6": {
     "company": "OpenAI",
@@ -1645,7 +1645,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2cba0d45-7a4f-4f38-ac73-3f8633bf0349": {
     "company": "OpenAI",
@@ -1661,7 +1661,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e6d5ca02-f30b-4ac5-a69d-c947efb430f9": {
     "company": "OpenAI",
@@ -1677,7 +1677,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/cb72b7f5-71b7-4a48-8c2f-68ca64e8a619": {
     "company": "Xero",
@@ -1709,7 +1709,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/b2c5f3d7-5dfd-45f6-a4fa-fa372f5875a5": {
     "company": "OpenAI",
@@ -1725,7 +1725,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/bcbe08e3-9593-431d-bc99-37e35e035742": {
     "company": "OpenAI",
@@ -1741,7 +1741,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/71acba5c-dbae-406f-b983-f40943c43068": {
     "company": "OpenAI",
@@ -1757,7 +1757,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/3de4718b-8f4c-4b63-8637-02077a0113aa": {
     "company": "OpenAI",
@@ -1773,7 +1773,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/6cd28395-3994-4309-8c41-e3f10c8102d8": {
     "company": "OpenAI",
@@ -1789,7 +1789,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/ecb73272-091d-4aa7-9e9b-07a29634cb4c": {
     "company": "OpenAI",
@@ -1805,7 +1805,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/3a415c1d-4f66-4578-8eb3-8b15ef0ab52b": {
     "company": "OpenAI",
@@ -1821,7 +1821,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/cf31f5f6-4e67-4695-808c-9cdd2e1fa3b1": {
     "company": "OpenAI",
@@ -1837,7 +1837,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/305a4b22-7ff9-4fa5-9229-c6a22c9aa64f": {
     "company": "OpenAI",
@@ -1853,7 +1853,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/23568366-d9e6-4d18-80b8-5ae9e87c61e6": {
     "company": "OpenAI",
@@ -1869,7 +1869,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/b40efa93-da3c-4593-bc98-03d203cd0488": {
     "company": "OpenAI",
@@ -1885,7 +1885,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/cf83e70e-6949-480f-ad97-df0f22cd0283": {
     "company": "OpenAI",
@@ -1901,7 +1901,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/05223b5a-5ff1-4fe7-9f97-4ef7fc68b8ef": {
     "company": "OpenAI",
@@ -1917,7 +1917,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/9ddb1bd1-3ee0-4350-88f7-3710057b8c93": {
     "company": "OpenAI",
@@ -1933,7 +1933,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/823fe212-7774-4387-a24b-b52f54c25fa3": {
     "company": "OpenAI",
@@ -1965,7 +1965,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/3728b144-f640-42be-84af-94f6b0743d7c": {
     "company": "OpenAI",
@@ -1981,7 +1981,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/ed4797ed-3ff6-4cb8-a5cb-a8331fc12a3e": {
     "company": "Xero",
@@ -2013,7 +2013,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/bb97fffc-cdda-43a3-a6bc-234f9c031720": {
     "company": "OpenAI",
@@ -2029,7 +2029,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/8fc7124f-6338-4ff5-93ec-c6050a31cb93": {
     "company": "OpenAI",
@@ -2061,7 +2061,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/d829b701-5ee2-414f-8596-ef94911a168a": {
     "company": "OpenAI",
@@ -2077,7 +2077,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/9b11373c-1643-4ea6-bbcd-033d5b8a0d3e": {
     "company": "OpenAI",
@@ -2093,7 +2093,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/60d3700b-ba82-4fa6-a6bb-7b2b67070510": {
     "company": "OpenAI",
@@ -2109,7 +2109,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/468d7cab-66e9-4ae1-bac9-f2531148af31": {
     "company": "OpenAI",
@@ -2125,7 +2125,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e2e59dcf-1017-45c5-8e6e-509a5812959b": {
     "company": "OpenAI",
@@ -2141,7 +2141,7 @@
     "research_fit": "High: systems, benchmark, performance",
     "notes": "Signals: systems, benchmark, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c02b35b2-af37-4740-a702-2ed3b5dc3cf1": {
     "company": "OpenAI",
@@ -2157,7 +2157,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/dc17edac-2993-4318-812a-14864c6f4658": {
     "company": "OpenAI",
@@ -2173,7 +2173,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/5a4ba7cb-4ba2-41d3-8e02-840617a0f571": {
     "company": "OpenAI",
@@ -2189,7 +2189,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f123bbe4-7f19-46c8-a6ab-4a5d7b714988": {
     "company": "OpenAI",
@@ -2205,7 +2205,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/e86d4945-183c-442d-934a-4c96a29ed4b5": {
     "company": "Xero",
@@ -2237,7 +2237,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/994bf78e-55ec-4c02-9326-6f90c08bcebe": {
     "company": "OpenAI",
@@ -2253,7 +2253,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2560ed50-5535-42b8-b069-9ebc28ce7493": {
     "company": "OpenAI",
@@ -2269,7 +2269,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a0feb59d-e66b-4cc7-a685-7f9393d80fb6": {
     "company": "OpenAI",
@@ -2285,7 +2285,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f956b77c-3cc5-4fdd-9463-2a6e5047e57c": {
     "company": "OpenAI",
@@ -2301,7 +2301,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f84dbb5c-6008-40f1-b388-1434d159d4a4": {
     "company": "OpenAI",
@@ -2317,7 +2317,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/be4e1098-f7ac-46f4-babe-44ef08f47fcb": {
     "company": "OpenAI",
@@ -2333,7 +2333,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a7a326e7-6718-42ab-a4d8-b16d5021c99b": {
     "company": "OpenAI",
@@ -2349,7 +2349,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/59761b88-8b28-41bf-949d-0e1dd35884b8": {
     "company": "OpenAI",
@@ -2381,7 +2381,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c5a99c73-c4c4-4321-a519-e0104dc54747": {
     "company": "OpenAI",
@@ -2397,7 +2397,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2c16575f-1a04-43af-bd0a-8e8f72e3255f": {
     "company": "OpenAI",
@@ -2413,7 +2413,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e4ef18a1-f2f7-4920-a53c-aeadd184d124": {
     "company": "OpenAI",
@@ -2429,7 +2429,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/336f3864-ccbf-44eb-bfc9-8090432a8e6f": {
     "company": "OpenAI",
@@ -2445,7 +2445,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/3fefc615-6950-4a29-9214-eefdc4e659e3": {
     "company": "OpenAI",
@@ -2461,7 +2461,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2d8b30c7-afa3-42ca-b315-ead35e8457ab": {
     "company": "OpenAI",
@@ -2477,7 +2477,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/97507b0b-1d56-4801-ab20-4f22fe221593": {
     "company": "OpenAI",
@@ -2493,7 +2493,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2a10db62-4690-4652-9516-3d4fe1392522": {
     "company": "OpenAI",
@@ -2509,7 +2509,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f1567543-4de1-468e-9054-bc5fd21a55e2": {
     "company": "OpenAI",
@@ -2525,7 +2525,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/976939e9-e072-4a24-abdb-84cf29a564c6": {
     "company": "OpenAI",
@@ -2541,7 +2541,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/0322d6d8-6588-4209-a304-83e768063a25": {
     "company": "OpenAI",
@@ -2557,7 +2557,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/1e110226-448a-4c0b-b0e4-d0f5df579fbf": {
     "company": "OpenAI",
@@ -2573,7 +2573,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/ec5a5d98-6314-44d9-9466-8d4d7ee866f6": {
     "company": "OpenAI",
@@ -2589,7 +2589,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2b5e8e15-7952-4170-a927-2ad68e318ed6": {
     "company": "OpenAI",
@@ -2605,7 +2605,7 @@
     "research_fit": "High: database, query, storage",
     "notes": "Signals: database, query, storage, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/460b4295-3803-4dda-983d-3b0fea0b0fc4": {
     "company": "OpenAI",
@@ -2621,7 +2621,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/cbacb6bd-aa41-41af-a5d5-13515a1be72b": {
     "company": "OpenAI",
@@ -2653,7 +2653,7 @@
     "research_fit": "High: database, systems, data infrastructure",
     "notes": "Signals: database, systems, data infrastructure, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/73eb1b69-095d-4f27-84ba-54f5df9bc230": {
     "company": "OpenAI",
@@ -2669,7 +2669,7 @@
     "research_fit": "High: database, systems, performance",
     "notes": "Signals: database, systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f2908f94-93a9-476b-ac83-b03392ae827d": {
     "company": "OpenAI",
@@ -2685,7 +2685,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/020b2aae-8be0-408c-ab49-20eefa8541af": {
     "company": "OpenAI",
@@ -2717,7 +2717,7 @@
     "research_fit": "High: storage, systems, benchmark",
     "notes": "Signals: storage, systems, benchmark, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a5591da5-23f3-4926-ac8d-8d1c927e3004": {
     "company": "OpenAI",
@@ -2733,7 +2733,7 @@
     "research_fit": "High: database, systems, performance",
     "notes": "Signals: database, systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/6ccb669b-7c0c-4531-819b-47fb0a5c9dbd": {
     "company": "OpenAI",
@@ -2765,7 +2765,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4476b271-4987-4bd4-aa1e-0e68ea683b10": {
     "company": "OpenAI",
@@ -2781,7 +2781,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/3d064454-c0c3-4225-bc2c-6d8c0f8735b2": {
     "company": "OpenAI",
@@ -2797,7 +2797,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/779b340d-e645-4da1-a923-b3070a26d936": {
     "company": "OpenAI",
@@ -2813,7 +2813,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/1f179760-8bfd-477c-a5dd-16d465d40307": {
     "company": "OpenAI",
@@ -2845,7 +2845,7 @@
     "research_fit": "High: storage, systems, data infrastructure",
     "notes": "Signals: storage, systems, data infrastructure",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/deff9215-217d-4392-825e-7788cb8205f3": {
     "company": "OpenAI",
@@ -2861,7 +2861,7 @@
     "research_fit": "High: storage, systems, backend",
     "notes": "Signals: storage, systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e72077d7-2aca-4752-a0f6-1ff9ffe13fdf": {
     "company": "OpenAI",
@@ -2869,7 +2869,7 @@
     "title": "Product Engineer, Full Stack - B2B Applications",
     "url": "https://jobs.ashbyhq.com/openai/e72077d7-2aca-4752-a0f6-1ff9ffe13fdf",
     "location": "San Francisco, Remote",
-    "posted_or_updated": "2025-12-12",
+    "posted_or_updated": "2026-04-22",
     "score": 70,
     "priority": "high-priority",
     "category": "Strong Match",
@@ -2877,7 +2877,7 @@
     "research_fit": "High: database, systems, performance",
     "notes": "Signals: database, systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/bd190cad-99ec-4fe7-8f8f-de96b5aa5969": {
     "company": "OpenAI",
@@ -2893,7 +2893,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c1c8b058-2f0d-4192-8a9e-c21d0f24952c": {
     "company": "OpenAI",
@@ -2909,7 +2909,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/89f58eb2-519f-4a36-8be0-2e594724e1bc": {
     "company": "OpenAI",
@@ -2925,7 +2925,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e1321408-91da-4ef3-8ac6-2e1da1be796f": {
     "company": "OpenAI",
@@ -2941,7 +2941,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/ad2cf782-15a4-48c7-9133-1788e3f33bbb": {
     "company": "OpenAI",
@@ -2957,7 +2957,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/770d5c3f-4e72-4b49-aec4-d444e8ad7a64": {
     "company": "OpenAI",
@@ -2973,7 +2973,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/621bb104-9daa-4c9e-949a-03d5730334e8": {
     "company": "OpenAI",
@@ -2989,7 +2989,7 @@
     "research_fit": "High: database, systems, performance",
     "notes": "Signals: database, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a4ea79c8-e79f-4126-8c1f-032289024961": {
     "company": "OpenAI",
@@ -3005,7 +3005,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/3ee22a2b-17f6-4848-93e4-b43e61169002": {
     "company": "OpenAI",
@@ -3021,7 +3021,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4d6a5951-9838-434c-830a-22cb938ea228": {
     "company": "OpenAI",
@@ -3037,7 +3037,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2004c873-d6e3-41b7-96e2-12fd9faec7a4": {
     "company": "OpenAI",
@@ -3053,7 +3053,7 @@
     "research_fit": "High: query, systems, backend",
     "notes": "Signals: query, systems, backend, data platform",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2f8a9267-6fdf-4067-b162-d219b844268c": {
     "company": "OpenAI",
@@ -3069,7 +3069,7 @@
     "research_fit": "High: database, systems, performance",
     "notes": "Signals: database, systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/202eb061-23d7-4a58-80c8-bc3b41e56d39": {
     "company": "OpenAI",
@@ -3101,7 +3101,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/0b24e041-9848-4df3-8289-90efe454d9f5": {
     "company": "OpenAI",
@@ -3117,7 +3117,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c3391b6b-2305-4b03-880f-57bc52217420": {
     "company": "OpenAI",
@@ -3149,7 +3149,7 @@
     "research_fit": "High: systems, index",
     "notes": "Signals: systems, index",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/97a7eeae-9625-4d00-874f-e50131f98369": {
     "company": "OpenAI",
@@ -3165,7 +3165,7 @@
     "research_fit": "High: systems, index",
     "notes": "Signals: systems, index",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/20d85859-8f7e-4e13-a992-b801a34780e5": {
     "company": "OpenAI",
@@ -3181,7 +3181,7 @@
     "research_fit": "High: systems, index",
     "notes": "Signals: systems, index",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2c9d0566-69b1-435e-bd8f-4eefc04dd076": {
     "company": "OpenAI",
@@ -3197,7 +3197,7 @@
     "research_fit": "High: storage, systems, performance",
     "notes": "Signals: storage, systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2f761ecc-02df-4a74-a076-6105b54323f8": {
     "company": "OpenAI",
@@ -3213,7 +3213,7 @@
     "research_fit": "High: systems, performance, backend",
     "notes": "Signals: systems, performance, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a6501870-774b-447f-8620-2b78854f9655": {
     "company": "OpenAI",
@@ -3229,7 +3229,7 @@
     "research_fit": "High: database, systems, backend",
     "notes": "Signals: database, systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/cc434f5b-dc0b-42fd-97ec-e0171545c6e9": {
     "company": "OpenAI",
@@ -3245,7 +3245,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/04ef9318-32fc-47df-a163-452569e13b58": {
     "company": "OpenAI",
@@ -3277,7 +3277,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/50626871-6bbf-4d8f-a534-176f929f1f37": {
     "company": "OpenAI",
@@ -3293,7 +3293,7 @@
     "research_fit": "High: systems, backend",
     "notes": "Signals: systems, backend",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/bf7d2623-7846-410c-87f8-c628915ec16c": {
     "company": "OpenAI",
@@ -3309,7 +3309,7 @@
     "research_fit": "High: systems, index",
     "notes": "Signals: systems, index",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/10980026-e468-4516-958c-7c697793d1d4": {
     "company": "OpenAI",
@@ -3325,7 +3325,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c1316397-25bb-4add-9e9d-0e3ea8ba929a": {
     "company": "OpenAI",
@@ -3341,7 +3341,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2f4ded22-dcc4-4e2c-94be-ca824071a7b7": {
     "company": "OpenAI",
@@ -3373,7 +3373,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/57551641-208c-48d9-bfb8-9a298d7e7510": {
     "company": "OpenAI",
@@ -3389,7 +3389,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7809102e-e82a-4678-bf7c-221de8acc0d6": {
     "company": "OpenAI",
@@ -3405,7 +3405,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f58cb1eb-9642-4a4d-a14d-d7a57d583a11": {
     "company": "OpenAI",
@@ -3421,7 +3421,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/9b79406c-89a8-49bd-8a38-e72db80996e9": {
     "company": "OpenAI",
@@ -3437,7 +3437,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/becc1279-db7c-4ca7-8576-5bee35c310de": {
     "company": "Xero",
@@ -3469,7 +3469,7 @@
     "research_fit": "High: systems, performance, physical design",
     "notes": "Signals: systems, performance, physical design",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/31b998a9-f62a-439e-89e4-b51aea6311f7": {
     "company": "OpenAI",
@@ -3485,7 +3485,7 @@
     "research_fit": "High: systems, performance, physical design",
     "notes": "Signals: systems, performance, physical design",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/20f525b7-f958-4c95-a055-f914ab3adb95": {
     "company": "OpenAI",
@@ -3501,7 +3501,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c44268f1-717b-4da3-9943-2557f7d739f0": {
     "company": "OpenAI",
@@ -3517,7 +3517,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/73e56947-5d8b-414d-a0ac-9dc9b04e2406": {
     "company": "OpenAI",
@@ -3533,7 +3533,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/551b0d0d-46c2-42fb-bb05-46e2fba8d4db": {
     "company": "OpenAI",
@@ -3549,7 +3549,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/0da75470-7e1e-44c3-90df-6f93cf90b968": {
     "company": "OpenAI",
@@ -3565,7 +3565,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/aa5662d4-5414-4760-82a0-352f133c9030": {
     "company": "Xero",
@@ -3597,7 +3597,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/311a5a17-102f-4018-b731-50d0bdde9e9c": {
     "company": "Xero",
@@ -3613,7 +3613,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7055f010-99f4-4c76-8361-ba5b5f9af1d0": {
     "company": "OpenAI",
@@ -3629,7 +3629,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/76ab9863-fc86-4ecf-9cc2-759cdd6b64b7": {
     "company": "OpenAI",
@@ -3645,7 +3645,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/efcc3430-14c8-4022-8350-8146ffb867ab": {
     "company": "OpenAI",
@@ -3661,7 +3661,7 @@
     "research_fit": "High: systems, index",
     "notes": "Signals: systems, index",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/d2ab1c9b-5c0c-4b43-a7c3-c9301854c023": {
     "company": "OpenAI",
@@ -3677,7 +3677,7 @@
     "research_fit": "High: systems, benchmark",
     "notes": "Signals: systems, benchmark",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/a3bfefb4-ef77-4a49-a644-92104ca83c2c": {
     "company": "OpenAI",
@@ -3693,7 +3693,7 @@
     "research_fit": "High: systems, benchmark",
     "notes": "Signals: systems, benchmark",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/55e611d8-b284-458e-908c-baccd091d0c0": {
     "company": "OpenAI",
@@ -3709,7 +3709,7 @@
     "research_fit": "High: systems, benchmark",
     "notes": "Signals: systems, benchmark",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c6e5f4a6-8ab1-4653-be9d-e2bca259e84a": {
     "company": "OpenAI",
@@ -3725,7 +3725,7 @@
     "research_fit": "High: systems, benchmark",
     "notes": "Signals: systems, benchmark",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/bdbb2292-ecb3-42dc-ba89-65edf397d8f8": {
     "company": "OpenAI",
@@ -3741,7 +3741,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/02aaa36c-971f-464e-b41c-0435bf762d43": {
     "company": "OpenAI",
@@ -3757,7 +3757,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/582b878e-61bf-4be2-8b30-623434baf726": {
     "company": "OpenAI",
@@ -3773,7 +3773,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/fff7b15d-a1a0-441f-90f1-5efcae7f0051": {
     "company": "OpenAI",
@@ -3789,7 +3789,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e9bea775-7eb6-438a-ab96-27d5f941e69d": {
     "company": "OpenAI",
@@ -3805,7 +3805,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/898a87fb-4cb8-450e-9840-ee5dc710a57d": {
     "company": "OpenAI",
@@ -3821,7 +3821,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7676e558-7700-4fb9-aedd-e311c5e8d021": {
     "company": "OpenAI",
@@ -3837,7 +3837,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/52c72cb9-7c44-4cba-b440-e05262a38491": {
     "company": "OpenAI",
@@ -3853,7 +3853,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7613aca3-9dd8-41cd-b114-06ef4de967a9": {
     "company": "OpenAI",
@@ -3869,7 +3869,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/2f1c59a8-570b-4192-9b5b-422f1a632cb6": {
     "company": "OpenAI",
@@ -3885,7 +3885,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4042f9ab-2df3-4745-986a-cf2063bd840b": {
     "company": "OpenAI",
@@ -3901,7 +3901,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/39cd0dd8-520d-4932-80bf-7495a1d1d11b": {
     "company": "OpenAI",
@@ -3917,7 +3917,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/830231e1-4e00-4714-8e0b-963364d7318f": {
     "company": "OpenAI",
@@ -3933,7 +3933,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/d8794980-1d3f-4d82-8b48-811449b6c492": {
     "company": "OpenAI",
@@ -3949,7 +3949,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/d66ae477-8742-4c4c-85a2-6f92a7dc67f2": {
     "company": "OpenAI",
@@ -3965,7 +3965,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7cd50a19-65f2-4a52-89a2-512130e58c5c": {
     "company": "OpenAI",
@@ -3981,7 +3981,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4509797c-7e8b-4bfd-a68e-fb3fd90d2433": {
     "company": "OpenAI",
@@ -3997,7 +3997,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/33e84dbf-5d3b-4cab-928d-4219fc68fdee": {
     "company": "OpenAI",
@@ -4029,7 +4029,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/720b6d72-0c98-4acc-ab75-d67dd36fbccf": {
     "company": "OpenAI",
@@ -4045,7 +4045,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/28c34712-6818-47fb-a4de-de9201ddc86f": {
     "company": "OpenAI",
@@ -4061,7 +4061,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/6c6c1ace-12d6-48f0-88f0-488ff8521571": {
     "company": "OpenAI",
@@ -4077,7 +4077,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/42672767-6055-4ac2-b499-3b34a9a4448f": {
     "company": "Xero",
@@ -4109,7 +4109,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4fb47557-86d2-47c3-9c6a-909aeb561329": {
     "company": "OpenAI",
@@ -4125,7 +4125,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/cb9280db-df39-4c88-b411-5fdf149a6e52": {
     "company": "OpenAI",
@@ -4141,7 +4141,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/8a86b02b-6063-4124-863f-7e41e9849e22": {
     "company": "OpenAI",
@@ -4162,7 +4162,7 @@
   "https://jobs.ashbyhq.com/openai/645ccd65-eb60-4eb7-b094-b01c2269638c": {
     "company": "OpenAI",
     "source": "OpenAI Careers",
-    "title": "Security Reliability Engineering, Lead",
+    "title": "Security Reliability Engineer",
     "url": "https://jobs.ashbyhq.com/openai/645ccd65-eb60-4eb7-b094-b01c2269638c",
     "location": "San Francisco",
     "posted_or_updated": "2026-01-30",
@@ -4173,7 +4173,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e6df42d0-6789-459e-b77b-62d7c5fd78da": {
     "company": "OpenAI",
@@ -4189,12 +4189,12 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4762783e-61e1-4d36-af1d-8dee3c5f70e2": {
     "company": "OpenAI",
     "source": "OpenAI Careers",
-    "title": "AI Deployment Engineer",
+    "title": "AI Deployment Engineer - Tokyo",
     "url": "https://jobs.ashbyhq.com/openai/4762783e-61e1-4d36-af1d-8dee3c5f70e2",
     "location": "Tokyo, Japan, Remote",
     "posted_or_updated": "2026-03-25",
@@ -4205,7 +4205,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/387e28ec-a4db-42da-9448-b6dbb7b13901": {
     "company": "OpenAI",
@@ -4221,7 +4221,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/82a30978-e4d9-4f64-aae2-b20877e052c0": {
     "company": "OpenAI",
@@ -4237,7 +4237,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/6131fc4f-bfc8-49f3-8223-773a55d15583": {
     "company": "OpenAI",
@@ -4253,7 +4253,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/8cf573f3-2268-44f7-8068-f2e60af5fc69": {
     "company": "OpenAI",
@@ -4269,7 +4269,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c9acc73a-b118-4802-bb51-87f3d57df883": {
     "company": "OpenAI",
@@ -4285,7 +4285,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/9923b68a-23b1-424a-af17-8d32f7f60e75": {
     "company": "Xero",
@@ -4317,7 +4317,7 @@
     "research_fit": "High: performance",
     "notes": "Signals: performance",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/1dc05fc7-ceb7-4827-a905-9d1beb77a4a0": {
     "company": "OpenAI",
@@ -4333,7 +4333,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/5816f1a5-c3c2-4ae8-9739-8a2ba7f139ef": {
     "company": "OpenAI",
@@ -4349,7 +4349,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/52f4588c-ae6c-446e-9d5b-290a5061b1ad": {
     "company": "Xero",
@@ -4365,7 +4365,7 @@
     "research_fit": "Low",
     "notes": "General relevance only",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/06ad1223-380d-46a0-9dfc-e3b342503522": {
     "company": "Xero",
@@ -4413,7 +4413,7 @@
     "research_fit": "High: storage, systems",
     "notes": "Signals: storage, systems",
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/b29b0e7a-bf70-41b6-bd19-db8d5806562f": {
     "company": "Xero",
@@ -4461,7 +4461,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-10",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e44bfa94-0b82-4d0c-b224-02155b76eea9": {
     "company": "OpenAI",
@@ -4477,7 +4477,7 @@
     "research_fit": "High: database, query, storage",
     "notes": "Signals: database, query, storage, systems",
     "first_seen": "2026-04-12",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/93e43f5f-d798-4704-bf52-9d90be8f2771": {
     "company": "OpenAI",
@@ -4493,7 +4493,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-12",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/2cf92322-2b87-43c4-9b6a-2a4aeea0033c": {
     "company": "Xero",
@@ -4509,7 +4509,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-14",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/34d2c085-c86f-41b7-8ca2-7964161c876d": {
     "company": "OpenAI",
@@ -4525,7 +4525,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-14",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/79e4f8a2-3e02-4a31-9dd0-a64704e1cb3e": {
     "company": "Xero",
@@ -4557,7 +4557,7 @@
     "research_fit": "High: query, systems, performance",
     "notes": "Signals: query, systems, performance, retrieval",
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/f6880901-6527-4b71-9f70-bc8d38989b84": {
     "company": "OpenAI",
@@ -4573,7 +4573,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/8a950265-0527-48f8-be3c-2923d7d96940": {
     "company": "OpenAI",
@@ -4589,7 +4589,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/38ddaa2c-a490-427a-8457-0e92bf00138c": {
     "company": "OpenAI",
@@ -4605,7 +4605,7 @@
     "research_fit": "High: database, storage, systems",
     "notes": "Signals: database, storage, systems, benchmark",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/1e4e9985-babf-4bd9-8fe8-a2016250780d": {
     "company": "OpenAI",
@@ -4621,7 +4621,7 @@
     "research_fit": "High: database, systems",
     "notes": "Signals: database, systems",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/3544fb7b-669b-43e3-8828-94972620bac7": {
     "company": "OpenAI",
@@ -4637,7 +4637,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/c4f90594-d61b-4b78-997e-0b12ff998e50": {
     "company": "OpenAI",
@@ -4653,7 +4653,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/d4a191f9-58f6-4c89-95f0-0c23ea59a8e4": {
     "company": "OpenAI",
@@ -4685,7 +4685,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/4fd1ba9f-a4ce-4392-aec5-fc6677e06ec9": {
     "company": "Xero",
@@ -4701,7 +4701,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/a97a9c69-dc1e-4c58-95d6-733ef6ff3589": {
     "company": "Xero",
@@ -4717,7 +4717,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/1c92378f-c553-4711-8d06-00c9f834c699": {
     "company": "OpenAI",
@@ -4733,7 +4733,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/eed8496c-8e12-4d14-b8b6-6dadff0463a6": {
     "company": "OpenAI",
@@ -4749,7 +4749,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/a547298d-33a5-45bc-ba01-d0787ac3e51b": {
     "company": "Xero",
@@ -4765,7 +4765,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/29d40809-10a4-451c-966f-80c3ef7b94ea": {
     "company": "OpenAI",
@@ -4781,7 +4781,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e9627fa6-ac76-4899-9a93-9251419e61a0": {
     "company": "OpenAI",
@@ -4797,7 +4797,7 @@
     "research_fit": "High: systems, benchmark, performance",
     "notes": "Signals: systems, benchmark, performance",
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/ae3a32af-b862-45db-838c-7fb49d4bc27e": {
     "company": "OpenAI",
@@ -4813,7 +4813,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/8e856e36-075e-40b4-b617-0229b5c1a308": {
     "company": "OpenAI",
@@ -4829,7 +4829,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e602cd50-002d-4ace-bb30-19db0afcf635": {
     "company": "OpenAI",
@@ -4845,7 +4845,7 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/19fc3e36-3bf3-4a7c-b65f-498d89220436": {
     "company": "OpenAI",
@@ -4861,7 +4861,7 @@
     "research_fit": "High: storage, systems, benchmark",
     "notes": "Signals: storage, systems, benchmark, performance",
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/4f6be73e-9a1d-4ec6-8b0e-b2af0b4becfb": {
     "company": "OpenAI",
@@ -4877,7 +4877,7 @@
     "research_fit": "High: storage, systems, benchmark",
     "notes": "Signals: storage, systems, benchmark, performance",
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/ec0a4e03-bbcc-4c64-813f-b53dabb8f53a": {
     "company": "OpenAI",
@@ -4893,7 +4893,7 @@
     "research_fit": "High: storage, systems, benchmark",
     "notes": "Signals: storage, systems, benchmark, performance",
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/68f7ef0f-97a4-47ce-ac0a-a442572ab7a7": {
     "company": "OpenAI",
@@ -4909,7 +4909,7 @@
     "research_fit": "High: database, systems",
     "notes": "Signals: database, systems",
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/7af121a1-d29a-4745-84c1-ef1b58a3b840": {
     "company": "OpenAI",
@@ -4925,7 +4925,7 @@
     "research_fit": "High: systems, benchmark, performance",
     "notes": "Signals: systems, benchmark, performance",
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/xero/c00839ba-9158-4fbf-99ad-71461129d258": {
     "company": "Xero",
@@ -4941,7 +4941,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-22"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/e2afdede-a222-4825-b2fc-fec439a7c893": {
     "company": "OpenAI",
@@ -4957,7 +4957,7 @@
     "research_fit": "High: systems, performance",
     "notes": "Signals: systems, performance",
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
   },
   "https://jobs.ashbyhq.com/openai/0ed12b35-0115-4ad3-81f5-ea1bb05c9f6b": {
     "company": "OpenAI",
@@ -4973,6 +4973,102 @@
     "research_fit": "High: systems",
     "notes": "Signals: systems",
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21"
+    "last_seen": "2026-04-23"
+  },
+  "https://jobs.ashbyhq.com/openai/667c09e2-6efc-45dc-9714-078bedf17343": {
+    "company": "OpenAI",
+    "source": "OpenAI Careers",
+    "title": "CPU/Storage/PoP-WAN Program Manager",
+    "url": "https://jobs.ashbyhq.com/openai/667c09e2-6efc-45dc-9714-078bedf17343",
+    "location": "San Francisco, Seattle, Remote",
+    "posted_or_updated": "2026-04-21",
+    "score": 84,
+    "priority": "high-priority",
+    "category": "Strong Match",
+    "resume_fit": "High: storage, systems, data infrastructure",
+    "research_fit": "High: storage, systems, data infrastructure",
+    "notes": "Signals: storage, systems, data infrastructure, performance",
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23"
+  },
+  "https://jobs.ashbyhq.com/openai/18a60850-cf8b-4374-a214-ef78b9712deb": {
+    "company": "OpenAI",
+    "source": "OpenAI Careers",
+    "title": "CPU Storage Tech Lead",
+    "url": "https://jobs.ashbyhq.com/openai/18a60850-cf8b-4374-a214-ef78b9712deb",
+    "location": "San Francisco, Seattle, Remote",
+    "posted_or_updated": "2026-04-21",
+    "score": 66,
+    "priority": "high-priority",
+    "category": "Strong Match",
+    "resume_fit": "High: storage, systems, performance",
+    "research_fit": "High: storage, systems, performance",
+    "notes": "Signals: storage, systems, performance",
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23"
+  },
+  "https://jobs.ashbyhq.com/openai/5acf4854-1d42-40ca-bff8-4f6f04cdce68": {
+    "company": "OpenAI",
+    "source": "OpenAI Careers",
+    "title": "Machine Learning Engineer, API Multicloud",
+    "url": "https://jobs.ashbyhq.com/openai/5acf4854-1d42-40ca-bff8-4f6f04cdce68",
+    "location": "San Francisco",
+    "posted_or_updated": "2026-04-22",
+    "score": 64,
+    "priority": "high-priority",
+    "category": "Strong Match",
+    "resume_fit": "High: systems, performance, backend",
+    "research_fit": "High: systems, performance, backend",
+    "notes": "Signals: systems, performance, backend",
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23"
+  },
+  "https://jobs.ashbyhq.com/openai/497daf98-1fa6-45aa-ba67-bc79207cd75f": {
+    "company": "OpenAI",
+    "source": "OpenAI Careers",
+    "title": "Silicon Implementation Engineer, Front End",
+    "url": "https://jobs.ashbyhq.com/openai/497daf98-1fa6-45aa-ba67-bc79207cd75f",
+    "location": "San Francisco",
+    "posted_or_updated": "2026-04-21",
+    "score": 46,
+    "priority": "high-priority",
+    "category": "Strong Match",
+    "resume_fit": "High: systems, performance, physical design",
+    "research_fit": "High: systems, performance, physical design",
+    "notes": "Signals: systems, performance, physical design",
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23"
+  },
+  "https://jobs.ashbyhq.com/openai/4c078f82-93b9-427c-8fd8-95de198884b4": {
+    "company": "OpenAI",
+    "source": "OpenAI Careers",
+    "title": "Forward Deployed Engineer - Singapore",
+    "url": "https://jobs.ashbyhq.com/openai/4c078f82-93b9-427c-8fd8-95de198884b4",
+    "location": "Singapore, Remote",
+    "posted_or_updated": "2026-04-21",
+    "score": 42,
+    "priority": "worth-trying",
+    "category": "Stretch but Worth Trying",
+    "resume_fit": "High: systems, backend",
+    "research_fit": "High: systems, backend",
+    "notes": "Signals: systems, backend",
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23"
+  },
+  "https://jobs.ashbyhq.com/openai/71508273-13e5-4b77-a675-953ff3d73ca5": {
+    "company": "OpenAI",
+    "source": "OpenAI Careers",
+    "title": "SOC Architect",
+    "url": "https://jobs.ashbyhq.com/openai/71508273-13e5-4b77-a675-953ff3d73ca5",
+    "location": "San Francisco",
+    "posted_or_updated": "2026-04-22",
+    "score": 32,
+    "priority": "worth-trying",
+    "category": "Stretch but Worth Trying",
+    "resume_fit": "High: systems, performance",
+    "research_fit": "High: systems, performance",
+    "notes": "Signals: systems, performance",
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23"
   }
 }
