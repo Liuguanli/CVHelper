@@ -1,17 +1,8 @@
 # Alerts
 
-Last updated: 2026-04-26
+Last updated: 2026-04-27
 
-## 2026-04-26 - New Roles
-
-### OpenAI - Software Engineer, Inference - Performance Optimization
-- URL: https://jobs.ashbyhq.com/openai/85fceac9-fb8a-4d71-a524-a8e5f1e9b01b
-- Posted / Updated: 2026-04-25
-- Why it stands out: Signals: systems, benchmark, performance
-- Resume fit: High: systems, benchmark, performance
-- Research fit: High: systems, benchmark, performance
-
-## 2026-04-26 - Strong Match Snapshot
+## 2026-04-27 - Strong Match Snapshot
 
 - OpenAI: Software Engineer, Database Systems | 2025-07-29 | San Francisco
 - OpenAI: Engineering Manager, Online Data Systems | 2026-03-16 | San Francisco
@@ -24,7 +15,7 @@ Last updated: 2026-04-26
 - OpenAI: Software Engineer, Data Acquisition | 2023-09-22 | San Francisco
 - OpenAI: Principal Software Engineer, B2B Engineering | 2026-03-23 | Remote - US
 
-## 2026-04-26 - Early-Career Snapshot
+## 2026-04-27 - Early-Career Snapshot
 
 - OpenAI: Research Scientist / Research Engineer — Early Career Cohort | 2026-03-19 | San Francisco
 - OpenAI: Software Engineer, Internal Applications - Enterprise | 2026-01-23 | San Francisco, Remote
