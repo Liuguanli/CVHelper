@@ -1,24 +1,42 @@
-\documentclass[11pt]{article}
-\usepackage[a4paper,left=0.85in,right=0.85in,top=0.75in,bottom=0.75in]{geometry}
-\usepackage{hyperref}
-\hypersetup{hidelinks}
-\usepackage{parskip}
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[scale=0.75]{geometry}
+
+\firstname{Guanli}
+\familyname{Liu}
+\address{Melbourne, Australia}
+\phone{+61 450 075 953}
+\email{liuguanli22@gmail.com}
+
 \begin{document}
-\thispagestyle{empty}
-{\Large \textbf{Cover Letter}}\\
-Databricks - Systems PhD - Software Engineer\\
-Prepared on April 5, 2026
 
-I am applying for the Systems PhD - Software Engineer role at Databricks. I bring about six years of research experience in database systems and about three years of engineering experience in backend and data-intensive software. Databricks is one of the few places where the strongest parts of my background map directly to the team's core problems: database systems, performance, indexing, and physical data optimization.
+\recipient{Hiring Committee}{Databricks}
+\date{\today}
+\opening{Dear Hiring Committee,}
+\closing{Sincerely,}
+\makelettertitle
 
-In my PhD and postdoctoral work at the University of Melbourne, I worked on database systems problems where performance depends on design choices inside the system. One example is data layout optimization. The problem was that data lake systems can behave very differently depending on how data is physically organized. I built a layout advisory system with dataset ingestion, SQL workload parsing, and layout recommendation, and I developed a cost model for physical design trade-offs. This work led to research published at VLDB 2025, with related follow-up work published at VLDB 2026.
+I am writing to apply for the Systems PhD - Software Engineer position at Databricks.
 
-Another example is benchmarking. I built DriftBench to study how system performance changes when workloads or data drift over time. The key point was to look beyond static benchmark results and ask whether system behavior stays stable when conditions change. That work strengthened my approach to systems evaluation, performance reasoning, and evidence-driven engineering. This work was published at VLDB 2026.
+My background sits at the intersection of database systems, system performance, and practical engineering. Across my PhD and postdoctoral work at the University of Melbourne, I have focused on systems problems where performance depends on design choices inside the data stack, especially around storage layout, query behaviour, indexing, and physical design.
 
-I also bring practical engineering experience beyond research systems. Earlier in industry, I worked on messaging infrastructure and database performance tuning at Baidu, and I have also built backend data workflows, ingestion pipelines, and practical system tooling in applied engineering settings. These experiences gave me hands-on experience with backend reliability, data workflows, and production-oriented engineering delivery.
+One example is data layout optimisation for lakehouse-style analytics. I built a layout advisory system with dataset ingestion, SQL workload parsing, and layout recommendation, and I developed a cost model to reason about physical design trade-offs. This work led to research published at VLDB 2025, with related follow-up work published at VLDB 2026. It reflects the way I like to work: connecting systems ideas to measurable performance outcomes.
 
-What especially interests me about Databricks is the chance to work on database and storage problems that are both deep and practical. The role's focus on query optimization, storage structures, indexes, and physical data optimization is very close to the strongest parts of my background. I believe I can bring systems depth, careful performance thinking, and practical engineering judgment to this team from day one.
+Another example is benchmarking. I built DriftBench to study how system performance changes when workloads or data drift over time. The goal was to go beyond static benchmark numbers and evaluate whether behaviour remains stable when conditions change. That work strengthened my approach to systems evaluation, performance reasoning, and evidence-driven engineering, and it was published at VLDB 2026.
 
-I would welcome the opportunity to discuss how my background could contribute to Databricks.
+I also bring practical engineering experience beyond research systems. Earlier in industry, I worked on messaging infrastructure and database performance tuning at Baidu, and I have also built backend data workflows, ingestion pipelines, and system tooling in applied engineering settings. These experiences gave me hands-on exposure to backend reliability, production-oriented engineering, and large-scale data workflows.
+
+What particularly attracts me to Databricks is the opportunity to work on database and storage problems that are both technically deep and highly practical. The role's emphasis on query optimisation, storage structures, indexing, and physical data optimisation maps closely to the strongest parts of my background. I would be excited to contribute systems depth, careful performance thinking, and practical engineering judgment to the team.
+
+I would welcome the opportunity to contribute my background in database systems, benchmarking, and performance-oriented software engineering to Databricks.
+
+\vspace{1cm}
+
+Sincerely,
+
+\vspace{0.5cm}
+
+Guanli Liu
 
 \end{document}
