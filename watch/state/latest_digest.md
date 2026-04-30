@@ -1,6 +1,6 @@
-Daily Job Watch Digest - 2026-04-30
+Daily Job Watch Digest - 2026-05-01
 ====================================
-New: 4 | Updated: 1 | Tracked: 286 | Failures: 1
+New: 3 | Updated: 8 | Tracked: 286 | Failures: 1
 
 Strong Match
 ------------
@@ -35,29 +35,29 @@ Stretch but Worth Trying
 ------------------------
 #   Company       Role                                        Date              Location                
 --------------------------------------------------------------------------------------------------------
-1   OpenAI        Release Engineer, Consumer Devices          2025-12-17        San Francisco           
+1   OpenAI        Offensive Security Engineer, Agent Produc…  2025-10-28        San Francisco, Seattle,…
+    Link: https://jobs.ashbyhq.com/openai/bb97fffc-cdda-43a3-a6bc-234f9c031720
+    Fit: High: systems | High: systems
+2   OpenAI        Release Engineer, Consumer Devices          2025-12-17        San Francisco           
     Link: https://jobs.ashbyhq.com/openai/63f7f0b3-ba2c-437b-87ba-ec476729f071
     Fit: High: systems, backend | High: systems, backend
-2   OpenAI        Reliability/DFX Engineer                    2025-09-17        San Francisco           
-    Link: https://jobs.ashbyhq.com/openai/b2c5f3d7-5dfd-45f6-a4fa-fa372f5875a5
-    Fit: High: systems, performance | High: systems, performance
 3   Xero          Principal Engineer                          2026-04-20        AU: Melbourne: (260 Bur…
     Link: https://jobs.ashbyhq.com/xero/c00839ba-9158-4fbf-99ad-71461129d258
     Fit: High: systems, performance | High: systems, performance
 4   Xero          Engineering Manager                         2026-04-13        UK: London (7 Devonshir…
     Link: https://jobs.ashbyhq.com/xero/2cf92322-2b87-43c4-9b6a-2a4aeea0033c
     Fit: High: systems, performance | High: systems, performance
-5   OpenAI        Researcher, Health AI                       2025-01-29        San Francisco           
+5   OpenAI        Reliability/DFX Engineer                    2025-09-17        San Francisco           
+    Link: https://jobs.ashbyhq.com/openai/b2c5f3d7-5dfd-45f6-a4fa-fa372f5875a5
+    Fit: High: systems, performance | High: systems, performance
+6   OpenAI        Researcher, Health AI                       2025-01-29        San Francisco           
     Link: https://jobs.ashbyhq.com/openai/bcbe08e3-9593-431d-bc99-37e35e035742
     Fit: High: systems | High: systems
-6   OpenAI        Researcher, Trustworthy AI                  2025-01-27        San Francisco, Remote   
+7   OpenAI        Researcher, Trustworthy AI                  2025-01-27        San Francisco, Remote   
     Link: https://jobs.ashbyhq.com/openai/71acba5c-dbae-406f-b983-f40943c43068
     Fit: High: systems | High: systems
-7   OpenAI        Security Engineer, Host Assurance           2026-04-01        San Francisco, Seattle,…
+8   OpenAI        Security Engineer, Host Assurance           2026-04-01        San Francisco, Seattle,…
     Link: https://jobs.ashbyhq.com/openai/3de4718b-8f4c-4b63-8637-02077a0113aa
-    Fit: High: systems | High: systems
-8   OpenAI        Senior Manager, Direct Tax AI Systems and…  2026-03-25        San Francisco           
-    Link: https://jobs.ashbyhq.com/openai/6cd28395-3994-4309-8c41-e3f10c8102d8
     Fit: High: systems | High: systems
 
 Early-Career / New Grad
