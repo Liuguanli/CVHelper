@@ -1,17 +1,24 @@
 # Alerts
 
-Last updated: 2026-05-02
+Last updated: 2026-05-03
 
-## 2026-05-02 - New Roles
+## 2026-05-03 - New Roles
 
-### OpenAI - Manufacturing Quality Engineer, Datacenter Infrastructure - Stargate
-- URL: https://jobs.ashbyhq.com/openai/1ac47cd0-b12a-4345-aecf-406f9e554b6c
+### OpenAI - Performance & Systems Engineer, Codex
+- URL: https://jobs.ashbyhq.com/openai/8a9d680c-5122-4ffe-ab4b-e1de7e806500
 - Posted / Updated: 2026-05-01
 - Why it stands out: Signals: systems, performance
 - Resume fit: High: systems, performance
 - Research fit: High: systems, performance
 
-## 2026-05-02 - Strong Match Snapshot
+## 2026-05-03 - Updated Roles
+
+### OpenAI - Software Engineer, Post-Training Research
+- URL: https://jobs.ashbyhq.com/openai/f381868f-7b0a-4b22-b215-71c7f5c1b498
+- Posted / Updated: 2026-04-29
+- Why it stands out: Signals: systems
+
+## 2026-05-03 - Strong Match Snapshot
 
 - OpenAI: Software Engineer, Database Systems | 2025-07-29 | San Francisco
 - OpenAI: Engineering Manager, Online Data Systems | 2026-03-16 | San Francisco
@@ -24,6 +31,6 @@ Last updated: 2026-05-02
 - OpenAI: Software Engineer, Data Acquisition | 2023-09-22 | San Francisco
 - OpenAI: Principal Software Engineer, B2B Engineering | 2026-03-23 | Remote - US
 
-## 2026-05-02 - Early-Career Snapshot
+## 2026-05-03 - Early-Career Snapshot
 
 - OpenAI: Software Engineer, Internal Applications - Enterprise | 2026-01-23 | San Francisco, Remote
