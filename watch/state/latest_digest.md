@@ -1,6 +1,6 @@
-Daily Job Watch Digest - 2026-05-06
+Daily Job Watch Digest - 2026-05-07
 ====================================
-New: 2 | Updated: 0 | Tracked: 281 | Failures: 2
+New: 3 | Updated: 0 | Tracked: 281 | Failures: 1
 
 Strong Match
 ------------
@@ -27,8 +27,8 @@ Strong Match
 7   OpenAI        Backend Software Engineer, ChatGPT Engine…  2026-02-03        San Francisco           
     Link: https://jobs.ashbyhq.com/openai/17e31e56-418a-43bb-a72a-1b935dc71e29
     Fit: High: storage, systems, performance | High: storage, systems, performance
-8   OpenAI        Senior Software Engineer, Data Acquisition  2023-09-25        San Francisco           
-    Link: https://jobs.ashbyhq.com/openai/70c63d7a-df6f-48f0-b529-f02221e3dc23
+8   OpenAI        Software Engineer, Data Acquisition         2023-09-22        San Francisco           
+    Link: https://jobs.ashbyhq.com/openai/41d9d129-2e58-4ad3-be81-2e5096f4da4d
     Fit: High: database, storage, systems | High: database, storage, systems
 
 Stretch but Worth Trying
