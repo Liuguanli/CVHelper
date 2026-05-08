@@ -27,13 +27,29 @@
       "name": "Microsoft Research Careers",
       "company": "Microsoft",
       "url": "https://www.microsoft.com/en-us/research/careers/",
-      "allow_domains": ["www.microsoft.com", "microsoft.com"]
+      "allow_domains": [
+        "www.microsoft.com",
+        "microsoft.com",
+        "apply.careers.microsoft.com",
+        "careerhub.microsoft.com"
+      ]
     },
     {
       "name": "Amazon Jobs Search",
       "company": "Amazon",
       "url": "https://www.amazon.jobs/en/search?base_query=software+engineer+applied+scientist+database+systems&country%5B%5D=USA&country%5B%5D=AUS",
-      "allow_domains": ["www.amazon.jobs", "amazon.jobs"]
+      "allow_domains": ["www.amazon.jobs", "amazon.jobs"],
+      "source_type": "amazon_jobs_json",
+      "search_queries": [
+        "software development engineer",
+        "software engineer",
+        "applied scientist",
+        "research scientist",
+        "database engineer",
+        "systems engineer"
+      ],
+      "country_codes": ["USA", "AUS"],
+      "result_limit": 100
     },
     {
       "name": "Google Careers Search",

@@ -1,127 +1,186 @@
 # CV Harness Workspace
 
-这个目录现在已经有一份 LaTeX 简历母版：`CV-ByteDance.tex`。
+## Overview
 
-为了用 harness 高效完成“按岗位微调简历 + 生成可直接朗读的 cover letter / HR 视频稿”，建议把工作区固定成下面这个结构：
+This repository helps you run a practical end-to-end workflow for:
+
+- Role-specific resume tailoring (LaTeX based)
+- Cover letter and HR self-intro video script generation
+- Daily automated job watch with GitHub Actions
+- CI/CD practice on a real personal productivity project
+
+### Key points
+
+- Resume source of truth: `CV-ByteDance.tex`
+- Evidence source of truth: `base/fact_bank.md`
+- Per-role isolation: each role has its own folder under `jobs/`
+- Daily watch automation: updates are proposed via PR (not direct push)
+- CI baseline: lint + tests on every PR/push
+
+---
+
+## Repository structure
 
 ```text
 CVHelper/
-├── CV-ByteDance.tex                # 当前简历母版
+├── CV-ByteDance.tex
 ├── base/
-│   ├── fact_bank.md                # 事实库：经历、技能、亮点、不能乱写的边界
-│   └── writing_rules.md            # 写作约束：真实性、语气、时长、风格
+│   ├── fact_bank.md
+│   ├── writing_rules.md
+│   └── iteration_playbook.md
 ├── prompts/
-│   ├── 01_analyze_job.md           # 先拆解岗位需求
-│   ├── 02_tailor_resume.md         # 再改简历
-│   └── 03_write_cover_letter.md    # 生成 cover letter 和视频稿
+│   ├── 01_analyze_job.md
+│   ├── 02_tailor_resume.md
+│   └── 03_write_cover_letter.md
 ├── jobs/
 │   ├── _template/
-│   │   ├── job_posting.md
-│   │   ├── company_notes.md
-│   │   ├── targeting_notes.md
 │   └── <job-slug>/
 │       ├── job_posting.md
 │       ├── company_notes.md
 │       ├── targeting_notes.md
-│       └── outputs/
-│           └── <yyyymmdd>/
+│       └── outputs/<yyyymmdd>/
 ├── market_watch/
-│   ├── README.md                   # 新发现的相似岗位放这里
-│   ├── watch_targets.md            # 追踪范围和筛选规则
-│   ├── discovered_roles.md         # 后续发现的新岗位清单
-│   └── alerts.md                   # 值得优先看的岗位提醒
-└── scripts/
-    └── new_job.sh                  # 复制岗位模板
+│   ├── watch_targets.md
+│   ├── discovered_roles.md
+│   └── alerts.md
+├── watch/
+│   ├── config.json
+│   ├── run_daily_watch.py
+│   └── state/
+├── scripts/
+│   ├── new_job.sh
+│   └── build_resume.sh
+└── .github/workflows/
+    ├── ci.yml
+    └── job_watch.yml
 ```
 
-推荐工作流：
+---
 
-1. 运行 `scripts/new_job.sh company-role-date` 新建一个岗位目录。
-2. 把 JD 粘贴到 `jobs/<job-slug>/job_posting.md`。
-3. 把你对岗位的判断写到 `jobs/<job-slug>/targeting_notes.md`。
-4. 先在 `jobs/<job-slug>/outputs/<yyyymmdd>/` 下生成岗位分析。
-5. 再在同一个 dated 目录下生成简历、cover letter 和视频稿。
-6. 最后补一轮评估输出：
-   - ATS / 机器筛选打分
-   - HR 视角 review
-6. 每次新一轮修改，都新建一个 dated 目录，避免版本混在一起。
+## Quick start
 
-推荐文件命名：
+### 1) Create a role workspace
 
-- 分享给别人的最终文件，文件名里最好同时带上：
-  - 你的名字
-  - 文档类型
-  - 公司或岗位名
-  - 日期
-- 推荐格式：
-  - `guanli_liu_resume_<company>_<position>.pdf`
-  - `guanli_liu_coverletter_<company>_<position>.pdf`
-  - `guanli_liu_videoscript_<company>_<position>.pdf`
-- 这样单独发文件时不会混淆，也方便你保留多个版本。
+```bash
+scripts/new_job.sh company-role-yyyymm
+```
 
-目录收纳原则：
+### 2) Fill role inputs
 
-- 每个岗位根目录只保留输入文件：`job_posting.md`、`company_notes.md`、`targeting_notes.md`
-- 中间结果和最终结果统一放进 `outputs/<yyyymmdd>/`
-- 不保留多余的占位输出文件
-- LaTeX 编译垃圾文件会自动清理
-- 每轮结果建议至少包含：
-  - `job_analysis_<yyyymmdd>.md`
-  - `resume_changes_<yyyymmdd>.md`
-  - `ats_review_<yyyymmdd>.md`
-  - `hr_review_<yyyymmdd>.md`
-  - 简历 PDF
-  - cover letter PDF
-  - video script PDF
+- `jobs/<job-slug>/job_posting.md`
+- `jobs/<job-slug>/company_notes.md`
+- `jobs/<job-slug>/targeting_notes.md`
 
-Git 管理建议：
+### 3) Generate outputs
 
-1. 把 `base/`、`prompts/`、`jobs/`、`market_watch/`、`scripts/` 和简历母版纳入版本控制。
-2. 忽略 LaTeX 编译中间文件、PDF、`.DS_Store` 等噪音文件。
-3. 每新增一个岗位，尽量单独 commit，方便回看这次申请到底改了什么。
-4. 如果某个岗位最后真的投递了，可以再打一个 tag 或单独建分支保存最终版本。
-5. `market_watch/` 适合频繁小 commit，因为它本质上是持续更新的机会池。
+Use prompts in `prompts/` to produce:
 
-几个关键建议：
+- `job_analysis_<yyyymmdd>.md`
+- `resume_changes_<yyyymmdd>.md`
+- `ats_review_<yyyymmdd>.md`
+- `hr_review_<yyyymmdd>.md`
+- tailored resume `.tex` and `.pdf`
+- cover letter and HR video script
 
-- 简历只做“最小必要修改”，避免为了贴岗位而失真。
-- cover letter 不要写成传统套话，应该更像 3 到 4 分钟的人话视频稿。
-- 视频稿要能直接朗读，所以要短句、口语化、少从句。
-- 任何没做过的事情都不要扩写成“我主导过”。
+### 4) Compile LaTeX resume
 
-岗位追踪约定：
+```bash
+bash scripts/build_resume.sh jobs/<job-slug>/outputs/<yyyymmdd>/tailored_resume.tex
+```
 
-- 你已经决定要申请的岗位，放到 `jobs/`。
-- 我后续发现的类似新岗位，先放到 `market_watch/discovered_roles.md`。
-- 如果我判断某个岗位特别值得你尽快看，我会同时写进 `market_watch/alerts.md` 并在回复里直接提醒你。
+---
 
-如果后面你愿意，我可以下一步继续帮你把这个结构再升级成“输入一个 JD 就自动生成一套输出”的半自动脚本版本。
+## Detailed usage
 
-## GitHub Actions 岗位巡检
+### A. Resume + application material workflow
 
-这个仓库现在也可以接 GitHub Actions 做每日岗位巡检。
+1. Analyze the role (`prompts/01_analyze_job.md`)
+2. Tailor resume with minimal necessary edits (`prompts/02_tailor_resume.md`)
+3. Generate cover letter + HR script + HR review (`prompts/03_write_cover_letter.md`)
+4. Save each iteration in a new dated output folder
 
-核心思路：
+Design rules:
 
-1. GitHub Actions 每天定时运行 `watch/run_daily_watch.py`
-2. 脚本抓官方 careers / jobs 页面
-3. 把结果写回：
-   - `market_watch/discovered_roles.md`
-   - `market_watch/alerts.md`
-   - `watch/state/seen_jobs.json`
-   - `watch/state/latest_digest.md`
-4. 如果配置了邮箱 secrets，再把摘要发到你的邮箱
-5. GitHub Actions 会把这些更新自动 commit 回仓库
+- Stay truthful and interview-defensible
+- Prefer natural JD-term mapping over keyword stuffing
+- Keep structure stable unless a role-specific reason requires change
 
-这意味着：
+### B. Daily job watch workflow
 
-- 结果不会只留在 GitHub Actions 临时机器里
-- 结果会回写到你的仓库
-- 你本地只要 `git pull` 就能同步最新岗位摘要
+`watch/run_daily_watch.py` collects roles from configured sources and updates:
 
-对应文件：
+- `market_watch/discovered_roles.md`
+- `market_watch/alerts.md`
+- `watch/state/seen_jobs.json`
+- `watch/state/latest_digest.md`
 
-- 工作流：`.github/workflows/job_watch.yml`
-- 配置：`watch/config.json`
-- 脚本：`watch/run_daily_watch.py`
-- 说明：`watch/README.md`
+Optional email digest is sent when SMTP secrets are configured.
+
+Required secrets (GitHub):
+
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USERNAME`
+- `SMTP_PASSWORD`
+- `EMAIL_FROM`
+- `EMAIL_TO`
+
+---
+
+## CI/CD setup in this repo
+
+### CI (`.github/workflows/ci.yml`)
+
+Runs on `push`/`pull_request`:
+
+- install dependencies
+- `ruff check watch tests`
+- `pytest -q`
+
+### CD-style automation (`.github/workflows/job_watch.yml`)
+
+Runs daily and on manual dispatch:
+
+1. executes `watch/run_daily_watch.py`
+2. creates/updates an automation PR with watch output changes
+3. after merge, changes become part of `main`
+
+This avoids direct bot pushes and keeps change history reviewable.
+
+---
+
+## How to ensure you always see the latest work
+
+### On GitHub
+
+1. Check **Actions** for the latest `Daily Job Watch` run status
+2. Check open PRs for a PR titled `chore(job-watch): update daily snapshot`
+3. Review and merge that PR to publish the latest watch output to `main`
+
+### Locally
+
+1. Pull latest main:
+
+```bash
+git pull
+```
+
+2. Confirm freshness in:
+
+- `watch/state/latest_digest.md`
+- `market_watch/discovered_roles.md`
+
+3. Use `Last updated: <date>` in generated markdown to verify recency.
+
+If no new PR is created on a run, it usually means no meaningful watch changes were detected.
+
+---
+
+## Practical CI/CD practice path (recommended)
+
+1. Break a small test intentionally, open PR, and verify CI fails.
+2. Fix test and verify CI turns green.
+3. Trigger `Daily Job Watch` manually (`workflow_dispatch`) and verify automation PR appears.
+4. Merge PR and verify latest digest files update on `main`.
+5. Pull locally and verify you can see the newest watch snapshot.
+

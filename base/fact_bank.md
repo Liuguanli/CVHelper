@@ -1,6 +1,6 @@
 # Fact Bank
 
-这份文件是给 harness 的“真实信息来源”。之后改简历和写 cover letter 时，优先以这里和 `CV-ByteDance.tex` 为准。
+This file is the ground-truth source for the harness. When tailoring the resume or writing cover letters, prioritize this file and `CV-ByteDance.tex`.
 
 ## Identity
 

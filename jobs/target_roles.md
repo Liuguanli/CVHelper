@@ -1,6 +1,6 @@
 # Target Roles
 
-这是你当前准备推进的岗位清单。
+This is the current role list you are preparing to pursue.
 
 | Company | Role Title | Job Folder | Status | Notes |
 |---|---|---|---|---|
@@ -13,8 +13,8 @@
 | Databricks | Senior Software Engineer - Database Engine Internals | `jobs/databricks-senior-software-engineer-database-engine-internals-202604` | todo | Strong systems / database engine fit |
 | Databricks | Systems PhD - Software Engineer | `jobs/databricks-systems-phd-software-engineer-202604` | drafted-20260405 | Strongest direct PhD + systems fit |
 
-说明：
+Notes:
 
-- `todo` 表示目录已建，但 JD 还需要补全或确认。
-- Google 和 Meta 里有两条标题目前仍需从岗位页确认。
-- Anthropic 这次没有建目录，因为你还没给出具体岗位链接。
+- `todo` means the directory exists, but JD details still need completion or confirmation.
+- Two Google/Meta entries still need title confirmation from their job pages.
+- No Anthropic role directory was created in this round because no specific role URL was provided.

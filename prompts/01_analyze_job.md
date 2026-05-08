@@ -1,8 +1,8 @@
 # Prompt: Analyze Job
 
-请基于以下输入文件分析岗位，并把结果写入 `jobs/<job-slug>/outputs/job_analysis.md`。
+Analyze the role based on the input files below and write the result to `jobs/<job-slug>/outputs/job_analysis.md`.
 
-输入文件：
+Input files:
 
 - `jobs/<job-slug>/job_posting.md`
 - `jobs/<job-slug>/company_notes.md`
@@ -10,19 +10,19 @@
 - `base/fact_bank.md`
 - `base/writing_rules.md`
 
-要求：
+Requirements:
 
-1. 先用 3 到 5 句话总结岗位真正要找的人。
-2. 列出：
+1. Summarize in 3-5 sentences what kind of candidate this role is actually seeking.
+2. List:
    - must-have requirements
    - nice-to-have requirements
    - likely pain points of the hiring team
-3. 判断我的背景里最应该强调的内容。
-4. 判断我和岗位之间的潜在 gap，并给出诚实表达方式。
-5. 给出“简历应该怎么改”的具体建议，最多 8 条。
-6. 给出“cover letter / 视频稿应该怎么讲”的具体建议，最多 6 条。
+3. Identify what should be emphasized most from my background.
+4. Identify potential gaps between my background and the role, with honest framing suggestions.
+5. Provide up to 8 concrete recommendations for resume tailoring.
+6. Provide up to 6 concrete recommendations for cover letter / video script positioning.
 
-输出格式：
+Output format:
 
 - `Role summary`
 - `Must have`
