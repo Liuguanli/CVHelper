@@ -11,6 +11,7 @@ concurrency:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   watch:
@@ -40,16 +41,23 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: python watch/run_daily_watch.py
 
-      - name: Commit watch updates
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add market_watch watch/state
-          if git diff --cached --quiet; then
-            echo "No watch updates to commit."
-          else
-            git commit -m "Update daily job watch snapshot"
-            git fetch origin main
-            git rebase -X theirs origin/main
-            git push origin HEAD:main
-          fi
+      - name: Create pull request for watch updates
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: "automation/daily-job-watch"
+          delete-branch: true
+          commit-message: "chore(job-watch): update daily snapshot"
+          title: "chore(job-watch): update daily snapshot"
+          body: |
+            Automated daily job watch update.
+
+            Updated paths:
+            - `market_watch/discovered_roles.md`
+            - `market_watch/alerts.md`
+            - `watch/state/seen_jobs.json`
+            - `watch/state/latest_digest.md`
+          add-paths: |
+            market_watch/discovered_roles.md
+            market_watch/alerts.md
+            watch/state/seen_jobs.json
+            watch/state/latest_digest.md

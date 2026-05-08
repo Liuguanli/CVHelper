@@ -30,21 +30,21 @@
 
 ## Matching Heuristics
 
-优先记录满足以下条件的岗位：
+Prioritize roles that satisfy these conditions:
 
-- 和 backend, data infra, query processing, storage, indexing, benchmarking, data systems 明显相关
-- 和 applied / research engineering 明显相关
-- 虽然标题不完全匹配，但职责和你的背景高度重叠
-- 位于美国或澳洲，或支持 remote / relocation，且公司为大厂或高质量技术公司
+- Clearly related to backend, data infrastructure, query processing, storage, indexing, benchmarking, or data systems
+- Clearly related to applied or research engineering
+- Even if title wording differs, responsibilities strongly overlap with your background
+- Located in the US/Australia or supports remote/relocation, and from strong technical companies
 
-另外必须至少满足下面两项中的一项：
+Additionally, at least one of the following must hold:
 
-- `resume fit`: 可以直接对应到你现有简历中的经历、技术栈、项目或工业经验
-- `research fit`: 可以直接对应到你 PhD / Postdoc 的研究主题、论文方向、系统原型或 benchmarking / indexing / query processing 工作
+- `resume fit`: directly maps to experience, tech stack, projects, or industry work already in your resume
+- `research fit`: directly maps to your PhD/Postdoc themes, publication direction, system prototypes, or benchmarking/indexing/query-processing work
 
 ## Strong Match Areas
 
-以下方向优先级更高：
+Higher-priority domains:
 
 - Database engine / query engine / storage engine
 - Data infrastructure / data platform / ingestion / pipeline reliability
@@ -60,7 +60,7 @@
 - Data ingestion and data pipelines
 - PostgreSQL / BigQuery / PostGIS / pgvector
 - Reliability, performance tuning, benchmarking
-- RAG and retrieval related system building
+- RAG and retrieval-related system building
 
 ## Research Fit Signals
 
@@ -73,7 +73,7 @@
 
 ## Exclusions
 
-- 明显偏前端 / design / product marketing 的岗位
-- 纯 manager 岗位
-- 明显和你背景无关的 domain specialist 岗位
-- 只能靠堆关键词才能勉强贴上的岗位
+- Roles mainly focused on frontend, design, or product marketing
+- Pure management roles
+- Domain specialist roles clearly unrelated to your background
+- Roles that only match through forced keyword stuffing

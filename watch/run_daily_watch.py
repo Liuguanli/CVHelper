@@ -71,6 +71,7 @@ GENERIC_URL_SNIPPETS = [
 
 TITLE_ROLE_KEYWORDS = [
     "software engineer",
+    "software development engineer",
     "research engineer",
     "research scientist",
     "applied scientist",
@@ -153,6 +154,9 @@ class Source:
     source_type: str = "generic_html"
     board_token: str | None = None
     board_name: str | None = None
+    search_queries: list[str] | None = None
+    country_codes: list[str] | None = None
+    result_limit: int | None = None
 
 
 @dataclass
@@ -186,12 +190,21 @@ def save_seen_jobs(seen: dict[str, dict]) -> None:
     SEEN_JOBS_PATH.write_text(json.dumps(seen, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def request_headers(*, accept_json: bool = False) -> dict[str, str]:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; CVHelperJobWatch/1.0; +https://github.com/)",
+        # Avoid zstd responses because some Python environments here fail to decode them reliably.
+        "Accept-Encoding": "gzip, deflate",
+    }
+    if accept_json:
+        headers["Accept"] = "application/json"
+    return headers
+
+
 def fetch(url: str) -> str:
     response = requests.get(
         url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (compatible; CVHelperJobWatch/1.0; +https://github.com/)"
-        },
+        headers=request_headers(),
         timeout=30,
     )
     response.raise_for_status()
@@ -201,10 +214,7 @@ def fetch(url: str) -> str:
 def fetch_json(url: str) -> dict[str, Any]:
     response = requests.get(
         url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (compatible; CVHelperJobWatch/1.0; +https://github.com/)",
-            "Accept": "application/json",
-        },
+        headers=request_headers(accept_json=True),
         timeout=30,
     )
     response.raise_for_status()
@@ -231,7 +241,7 @@ def is_job_like_link(url: str, text: str, source: Source) -> bool:
         return False
     if "google.com/about/careers/applications/jobs/results/" in lower_url and not re.search(r"/results/\d", lower_url):
         return False
-    if any(token in lower_url for token in ["/jobs/", "/job/", "/careers/details/", "/job_details/", "/applications/jobs/results/", "/careers/jobs/"]):
+    if any(token in lower_url for token in ["/jobs/", "/job/", "/careers/details/", "/job_details/", "/applications/jobs/results/", "/careers/jobs/", "/careers/job/"]):
         return True
     if any(token in lower_text for token in TITLE_ROLE_KEYWORDS):
         return True
@@ -252,6 +262,8 @@ def extract_candidate_urls(source: Source, html: str) -> list[str]:
 
 def text_from_html(html: str) -> str:
     soup = BeautifulSoup(html, "html.parser")
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
     return soup.get_text("\n", strip=True)
 
 
@@ -308,7 +320,7 @@ def looks_like_job_page(url: str, title: str, text: str) -> bool:
         return False
     if not looks_like_real_job_title(title):
         return False
-    has_job_url = any(token in lower_url for token in ["/jobs/", "/job/", "/careers/details/", "/job_details/"])
+    has_job_url = any(token in lower_url for token in ["/jobs/", "/job/", "/careers/details/", "/job_details/", "/careers/job/"])
     has_job_signal = any(signal in lower_text for signal in JOB_PAGE_SIGNALS)
     has_title_role = any(token in lower_title for token in TITLE_REQUIRED_TOKENS)
     return (has_job_url or has_job_signal) and has_title_role
@@ -318,6 +330,8 @@ def html_fragment_to_text(content: str) -> str:
     if not content:
         return ""
     soup = BeautifulSoup(html.unescape(content), "html.parser")
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
     return soup.get_text("\n", strip=True)
 
 
@@ -447,6 +461,70 @@ def collect_ashby_jobs(source: Source, config: dict) -> list[Job]:
         if job:
             jobs.append(job)
     return jobs
+
+
+def collect_amazon_jobs(source: Source, config: dict) -> list[Job]:
+    queries = source.search_queries or ["software engineer"]
+    result_limit = source.result_limit or 100
+    allowed_countries = set(source.country_codes or [])
+    jobs: list[Job] = []
+
+    for query in queries:
+        search_url = (
+            "https://www.amazon.jobs/en/search.json"
+            f"?base_query={requests.utils.quote(query)}"
+            f"&sort=recent&result_limit={result_limit}"
+        )
+        data = fetch_json(search_url)
+        for item in data.get("jobs", []):
+            country_code = item.get("country_code", "")
+            if allowed_countries and country_code not in allowed_countries:
+                continue
+
+            title = item.get("title", "")
+            description = html_fragment_to_text(item.get("description", ""))
+            qualifications = html_fragment_to_text(item.get("basic_qualifications", ""))
+            preferred = html_fragment_to_text(item.get("preferred_qualifications", ""))
+            location = first_non_empty(
+                [
+                    item.get("normalized_location", ""),
+                    item.get("location", ""),
+                    f"{item.get('city', '')}, {country_code}".strip(", "),
+                ]
+            )
+            text = "\n".join(
+                part
+                for part in [
+                    title,
+                    description,
+                    qualifications,
+                    preferred,
+                    item.get("job_category", ""),
+                    item.get("job_family", ""),
+                    item.get("business_category", ""),
+                    location,
+                ]
+                if part
+            )
+
+            job = build_job(
+                source,
+                config,
+                title=title,
+                url=urljoin("https://www.amazon.jobs", item.get("job_path", "")),
+                text=text,
+                location=location,
+                posted_or_updated=item.get("posted_date") or item.get("updated_time") or "Not shown on page",
+            )
+            if job:
+                jobs.append(job)
+
+    deduped: dict[str, Job] = {}
+    for job in jobs:
+        existing = deduped.get(job.url)
+        if existing is None or job.score > existing.score:
+            deduped[job.url] = job
+    return list(deduped.values())
 
 
 def collect_google_jobs(source: Source, config: dict) -> list[Job]:
@@ -628,6 +706,8 @@ def collect_jobs(config: dict) -> list[Job]:
                 source_jobs = collect_greenhouse_jobs(source, config)
             elif source.source_type == "ashby_api":
                 source_jobs = collect_ashby_jobs(source, config)
+            elif source.source_type == "amazon_jobs_json":
+                source_jobs = collect_amazon_jobs(source, config)
             elif source.source_type == "google_careers":
                 source_jobs = collect_google_jobs(source, config)
             elif source.source_type == "databricks_html":
@@ -749,7 +829,7 @@ def render_discovered_roles(jobs: list[Job], today: str) -> str:
         "",
         f"Last updated: {today}",
         "",
-        "这个文件记录当前巡检结果里值得继续关注的岗位。",
+        "This file records roles from the current watch run that are worth continued tracking.",
         "",
         "| Date Seen | Company | Role Title | URL | Posted / Updated | Location | Resume Fit | Research Fit | Priority | Notes |",
         "|---|---|---|---|---|---|---|---|---|---|",
@@ -815,12 +895,49 @@ def render_alerts(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job],
     return "\n".join(lines)
 
 
+def render_digest_change_list(title: str, jobs: list[Job], *, limit: int = 6) -> list[str]:
+    section = [title, "-" * len(title)]
+    bucket = diversify_jobs(jobs, per_company_limit=2, total_limit=limit)
+    if not bucket:
+        section.extend(["None", ""])
+        return section
+
+    for idx, job in enumerate(bucket, start=1):
+        section.append(f"{idx}. {job.company} | {job.title}")
+        section.append(f"   Posted / Updated: {job.posted_or_updated}")
+        section.append(f"   Location: {job.location}")
+        section.append(f"   Fit: {job.resume_fit} | {job.research_fit}")
+        section.append(f"   Link: {job.url}")
+    section.append("")
+    return section
+
+
+def render_digest_html_change_section(title: str, jobs: list[Job], *, limit: int = 6) -> str:
+    bucket = diversify_jobs(jobs, per_company_limit=2, total_limit=limit)
+    if not bucket:
+        return f"<h2>{html.escape(title)}</h2><p>None</p>"
+
+    items = []
+    for job in bucket:
+        items.append(
+            "<li style='margin-bottom: 12px;'>"
+            f"<strong>{html.escape(job.company)}</strong> - {html.escape(job.title)}<br>"
+            f"Posted / Updated: {html.escape(job.posted_or_updated)}<br>"
+            f"Location: {html.escape(job.location)}<br>"
+            f"Fit: {html.escape(job.resume_fit)} | {html.escape(job.research_fit)}<br>"
+            f"<a href=\"{html.escape(job.url)}\">Open role</a>"
+            "</li>"
+        )
+
+    return f"<h2>{html.escape(title)}</h2><ul>{''.join(items)}</ul>"
+
+
 def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job], today: str) -> str:
     fetch_failures = [job for job in jobs if job.title.startswith("[Source fetch failed]")]
     tracked_jobs = [job for job in jobs if not job.title.startswith("[Source fetch failed]")]
-    strong = diversify_jobs([job for job in tracked_jobs if job.category == "Strong Match"], per_company_limit=2, total_limit=8)
-    stretch = diversify_jobs([job for job in tracked_jobs if job.category == "Stretch but Worth Trying"], per_company_limit=2, total_limit=8)
-    early = diversify_jobs([job for job in tracked_jobs if job.category == "Early-Career / New Grad"], per_company_limit=2, total_limit=8)
+    strong = diversify_jobs([job for job in tracked_jobs if job.category == "Strong Match"], per_company_limit=2, total_limit=4)
+    stretch = diversify_jobs([job for job in tracked_jobs if job.category == "Stretch but Worth Trying"], per_company_limit=2, total_limit=4)
+    early = diversify_jobs([job for job in tracked_jobs if job.category == "Early-Career / New Grad"], per_company_limit=2, total_limit=3)
     meaningful_count = len([job for job in tracked_jobs if job.category in {"Strong Match", "Stretch but Worth Trying", "Early-Career / New Grad"}])
 
     lines = [
@@ -829,6 +946,19 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
         f"New: {len(new_jobs)} | Updated: {len(updated_jobs)} | Tracked: {len(tracked_jobs)} | Failures: {len(fetch_failures)}",
         "",
     ]
+
+    if not new_jobs and not updated_jobs:
+        lines.extend(
+            [
+                "Today's Changes",
+                "---------------",
+                "No new or updated roles were detected today.",
+                "",
+            ]
+        )
+    else:
+        lines.extend(render_digest_change_list("Today's New Roles", new_jobs))
+        lines.extend(render_digest_change_list("Today's Updated Roles", updated_jobs))
 
     def clip(value: str, width: int) -> str:
         compact = re.sub(r"\s+", " ", value).strip()
@@ -852,9 +982,9 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
         return section
 
     sections = [
-        ("Strong Match", strong),
-        ("Stretch but Worth Trying", stretch),
-        ("Early-Career / New Grad", early),
+        ("Snapshot: Strong Match", strong),
+        ("Snapshot: Stretch but Worth Trying", stretch),
+        ("Snapshot: Early-Career / New Grad", early),
     ]
 
     for header, bucket in sections:
@@ -881,9 +1011,9 @@ def render_latest_digest(jobs: list[Job], new_jobs: list[Job], updated_jobs: lis
 def render_latest_digest_html(jobs: list[Job], new_jobs: list[Job], updated_jobs: list[Job], today: str) -> str:
     fetch_failures = [job for job in jobs if job.title.startswith("[Source fetch failed]")]
     tracked_jobs = [job for job in jobs if not job.title.startswith("[Source fetch failed]")]
-    strong = diversify_jobs([job for job in tracked_jobs if job.category == "Strong Match"], per_company_limit=2, total_limit=8)
-    stretch = diversify_jobs([job for job in tracked_jobs if job.category == "Stretch but Worth Trying"], per_company_limit=2, total_limit=8)
-    early = diversify_jobs([job for job in tracked_jobs if job.category == "Early-Career / New Grad"], per_company_limit=2, total_limit=8)
+    strong = diversify_jobs([job for job in tracked_jobs if job.category == "Strong Match"], per_company_limit=2, total_limit=4)
+    stretch = diversify_jobs([job for job in tracked_jobs if job.category == "Stretch but Worth Trying"], per_company_limit=2, total_limit=4)
+    early = diversify_jobs([job for job in tracked_jobs if job.category == "Early-Career / New Grad"], per_company_limit=2, total_limit=3)
     meaningful_count = len([job for job in tracked_jobs if job.category in {"Strong Match", "Stretch but Worth Trying", "Early-Career / New Grad"}])
 
     def render_table(title: str, bucket: list[Job]) -> str:
@@ -913,10 +1043,18 @@ def render_latest_digest_html(jobs: list[Job], new_jobs: list[Job], updated_jobs
         )
 
     sections = [
-        render_table("Strong Match", strong),
-        render_table("Stretch but Worth Trying", stretch),
-        render_table("Early-Career / New Grad", early),
+        render_table("Snapshot: Strong Match", strong),
+        render_table("Snapshot: Stretch but Worth Trying", stretch),
+        render_table("Snapshot: Early-Career / New Grad", early),
     ]
+
+    if not new_jobs and not updated_jobs:
+        changes_html = "<h2>Today's Changes</h2><p>No new or updated roles were detected today.</p>"
+    else:
+        changes_html = (
+            render_digest_html_change_section("Today's New Roles", new_jobs)
+            + render_digest_html_change_section("Today's Updated Roles", updated_jobs)
+        )
 
     run_notes = ""
     if meaningful_count == 0:
@@ -937,6 +1075,7 @@ def render_latest_digest_html(jobs: list[Job], new_jobs: list[Job], updated_jobs
         "<html><body style='font-family: Arial, sans-serif;'>"
         f"<h1>Daily Job Watch Digest - {html.escape(today)}</h1>"
         f"<p><strong>New:</strong> {len(new_jobs)} &nbsp; <strong>Updated:</strong> {len(updated_jobs)} &nbsp; <strong>Tracked:</strong> {len(tracked_jobs)} &nbsp; <strong>Failures:</strong> {len(fetch_failures)}</p>"
+        + changes_html
         + "".join(sections)
         + run_notes
         + "</body></html>"

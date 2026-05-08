@@ -2,7 +2,7 @@
 
 Last updated: 2026-05-08
 
-这个文件记录当前巡检结果里值得继续关注的岗位。
+This file records roles from the current watch run that are worth continued tracking.
 
 | Date Seen | Company | Role Title | URL | Posted / Updated | Location | Resume Fit | Research Fit | Priority | Notes |
 |---|---|---|---|---|---|---|---|---|---|

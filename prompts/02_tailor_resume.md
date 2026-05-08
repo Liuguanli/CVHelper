@@ -1,13 +1,13 @@
 # Prompt: Tailor Resume
 
-请基于以下输入文件，对现有 LaTeX 简历做“最小必要修改”，并产出：
+Based on the input files below, apply minimal necessary edits to the current LaTeX resume and produce:
 
-- 一个岗位定制版 LaTeX 简历：`jobs/<job-slug>/outputs/tailored_resume.tex`
-- 一个编译后的 PDF：`jobs/<job-slug>/outputs/tailored_resume.pdf`
-- 一个改动说明：`jobs/<job-slug>/outputs/resume_changes.md`
-- 一个 ATS / 机器筛选评估：`jobs/<job-slug>/outputs/ats_review.md`
+- Role-tailored LaTeX resume: `jobs/<job-slug>/outputs/tailored_resume.tex`
+- Compiled PDF: `jobs/<job-slug>/outputs/tailored_resume.pdf`
+- Change log: `jobs/<job-slug>/outputs/resume_changes.md`
+- ATS screening review: `jobs/<job-slug>/outputs/ats_review.md`
 
-输入文件：
+Input files:
 
 - `CV-ByteDance.tex`
 - `base/fact_bank.md`
@@ -17,55 +17,55 @@
 - `jobs/<job-slug>/targeting_notes.md`
 - `jobs/<job-slug>/outputs/job_analysis.md`
 
-硬性要求：
+Hard requirements:
 
-1. 保持真实，不新增没有证据支持的经历。
-2. 尽量保持原有结构和排版稳定。
-3. 修改优先级：
-   - Profile 段落
-   - Experience 中 bullet 的措辞和顺序
-   - Skills 中的排序和强调
-4. 如果岗位是偏 backend / data / infra，就优先强调：
+1. Keep everything truthful; do not add unsupported experience.
+2. Keep structure and layout as stable as possible.
+3. Prioritize edits in this order:
+   - Profile paragraph
+   - Wording and ordering of bullets in Experience
+   - Ordering and emphasis in Skills
+4. For backend/data/infra roles, prioritize emphasis on:
    - scalable backend systems
    - data infrastructure
    - ingestion / pipelines
    - SQL / databases
    - benchmarking / performance / reliability
-5. 如果岗位是偏 AI / retrieval / applied ML，就优先强调：
+5. For AI/retrieval/applied ML roles, prioritize emphasis on:
    - RAG
    - retrieval
-   - vector / embedding related work
-   - system building rather than pure theory
-6. 不要让简历变成 JD 的关键词堆砌版本。
-7. 不要让语言看起来像 AI 批量生成，避免空泛、过度包装、千篇一律的措辞。
-8. 必须尽量通过 ATS。
-9. ATS 友好的方式不是堆关键词，而是把 JD 里的关键术语自然地贴到真实经历上。
-10. 所有措辞都必须经得起面试追问。
+   - vector / embedding-related work
+   - system building over pure theory
+6. Do not turn the resume into JD keyword stuffing.
+7. Avoid AI-mass-generated tone: no vague, over-packaged, repetitive phrasing.
+8. Maximize ATS compatibility.
+9. ATS-friendly writing means natural mapping of JD terms to real experience, not brute-force keyword repetition.
+10. Every line must be defensible in interviews.
 
-输出要求：
+Output requirements:
 
-- `tailored_resume.tex` 应保持可编译。
-- 生成 `.tex` 后，再使用仓库里的 `scripts/build_resume.sh` 编译出 `tailored_resume.pdf`。
-- 如果某个 JD 关键词和你的经历不完全匹配，优先用接近但真实的表达，不要硬造。
+- `tailored_resume.tex` must remain compilable.
+- After generating `.tex`, compile `tailored_resume.pdf` via `scripts/build_resume.sh` in this repository.
+- If a JD keyword is not a perfect match to your experience, use the closest truthful phrasing; do not fabricate.
 
-`resume_changes.md` 请包含：
+`resume_changes.md` should include:
 
 - `What changed`
 - `Why it changed`
 - `What was intentionally not changed`
 - `Any remaining fit gaps`
 
-`ats_review.md` 请包含：
+`ats_review.md` should include:
 
-- `ATS Match Score`：0 到 100
+- `ATS Match Score`: 0-100
 - `Why this score`
 - `Keyword Coverage`
 - `Evidence Strength`
 - `Likely Screening Risks`
 - `Recommended Resume Fixes Before Applying`
 
-打分原则：
+Scoring principles:
 
-- 目标不是虚高分，而是保守、实用、能指导修改。
-- 关键词覆盖要看“真实映射”，不是机械命中。
-- 如果 JD 和经历存在明显断层，必须降分并写明原因。
+- Aim for conservative, practical, actionable scoring, not inflated numbers.
+- Evaluate keyword coverage by real mapping quality, not mechanical matching.
+- If there is a clear gap between JD and experience, lower the score and state why.

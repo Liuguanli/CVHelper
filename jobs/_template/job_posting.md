@@ -1,8 +1,8 @@
 # Job Posting
 
-把岗位描述完整粘贴到这里。
+Paste the full job description here.
 
-建议保留：
+Recommended fields to preserve:
 
 - job title
 - team / org
