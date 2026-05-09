@@ -8,6 +8,7 @@ This repository helps you run a practical end-to-end workflow for:
 - Cover letter and HR self-intro video script generation
 - Daily automated job watch with GitHub Actions
 - CI/CD practice on a real personal productivity project
+- CI status is validated on every pull request before merge
 
 ### Key points
 
@@ -183,4 +184,3 @@ If no new PR is created on a run, it usually means no meaningful watch changes w
 3. Trigger `Daily Job Watch` manually (`workflow_dispatch`) and verify automation PR appears.
 4. Merge PR and verify latest digest files update on `main`.
 5. Pull locally and verify you can see the newest watch snapshot.
-
