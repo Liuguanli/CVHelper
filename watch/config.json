@@ -115,19 +115,89 @@
       "company": "Telstra",
       "url": "https://www.telstra.com.au/careers/LinkedIn",
       "allow_domains": ["www.telstra.com.au", "telstra.com.au"]
+    },
+    {
+      "name": "ANZ Careers",
+      "company": "ANZ",
+      "url": "https://www.anz.com/careers/",
+      "allow_domains": ["www.anz.com", "anz.com", "careers.anz.com", "anz.wd3.myworkdayjobs.com"]
+    },
+    {
+      "name": "CBA Careers",
+      "company": "CBA",
+      "url": "https://www.commbank.com.au/about-us/careers.html",
+      "allow_domains": ["www.commbank.com.au", "commbank.com.au", "jobs.commbank.com.au", "cba.wd3.myworkdayjobs.com"]
+    },
+    {
+      "name": "NAB Careers",
+      "company": "NAB",
+      "url": "https://careers.nab.com.au/",
+      "allow_domains": ["careers.nab.com.au", "nab.wd3.myworkdayjobs.com", "www.nab.com.au", "nab.com.au"]
+    },
+    {
+      "name": "Westpac Careers",
+      "company": "Westpac",
+      "url": "https://www.westpac.com.au/about-westpac/careers/",
+      "allow_domains": ["www.westpac.com.au", "westpac.com.au", "careers.westpacgroup.com.au", "westpac.wd3.myworkdayjobs.com"]
+    },
+    {
+      "name": "University of Melbourne Careers",
+      "company": "University of Melbourne",
+      "url": "https://jobs.unimelb.edu.au/",
+      "allow_domains": ["jobs.unimelb.edu.au", "unimelb.edu.au"]
+    },
+    {
+      "name": "Monash Careers",
+      "company": "Monash University",
+      "url": "https://careers.monash.edu/",
+      "allow_domains": ["careers.monash.edu", "monash.edu", "monash.wd3.myworkdayjobs.com"]
+    },
+    {
+      "name": "RMIT Careers",
+      "company": "RMIT University",
+      "url": "https://careers.rmit.edu.au/",
+      "allow_domains": ["careers.rmit.edu.au", "rmit.edu.au", "rmit.wd3.myworkdayjobs.com"]
+    },
+    {
+      "name": "Deakin Careers",
+      "company": "Deakin University",
+      "url": "https://careers.deakin.edu.au/",
+      "allow_domains": ["careers.deakin.edu.au", "deakin.edu.au"]
+    },
+    {
+      "name": "La Trobe Careers",
+      "company": "La Trobe University",
+      "url": "https://careers.latrobe.edu.au/",
+      "allow_domains": ["careers.latrobe.edu.au", "latrobe.edu.au"]
+    },
+    {
+      "name": "Swinburne Careers",
+      "company": "Swinburne University",
+      "url": "https://careers.swinburne.edu.au/",
+      "allow_domains": ["careers.swinburne.edu.au", "swinburne.edu.au"]
     }
   ],
   "company_priority": [
+    "Amazon",
+    "MongoDB",
+    "Google",
+    "Microsoft",
     "Databricks",
     "OpenAI",
     "Anthropic",
-    "Amazon",
-    "Google",
     "Meta",
-    "Microsoft",
+    "ANZ",
+    "CBA",
+    "NAB",
+    "Westpac",
+    "University of Melbourne",
+    "Monash University",
+    "RMIT University",
+    "Deakin University",
+    "La Trobe University",
+    "Swinburne University",
     "Atlassian",
     "Canva",
-    "MongoDB",
     "Oracle",
     "Telstra",
     "Airwallex",
@@ -148,7 +218,13 @@
     "backend",
     "retrieval",
     "ml systems",
-    "infrastructure"
+    "infrastructure",
+    "research fellow",
+    "postdoctoral",
+    "postdoc",
+    "lecturer",
+    "academic",
+    "machine learning"
   ],
   "strong_match_keywords": [
     "database",
@@ -162,7 +238,11 @@
     "index",
     "backend",
     "physical design",
-    "data platform"
+    "data platform",
+    "research",
+    "research fellow",
+    "postdoctoral",
+    "postdoc"
   ],
   "early_career_keywords": [
     "early career",
@@ -187,9 +267,17 @@
     "usa",
     "australia",
     "melbourne",
+    "victoria",
+    "vic",
     "sydney",
+    "new south wales",
+    "nsw",
     "brisbane",
+    "queensland",
+    "qld",
     "perth",
+    "western australia",
+    "wa",
     "remote",
     "remote-friendly"
   ]

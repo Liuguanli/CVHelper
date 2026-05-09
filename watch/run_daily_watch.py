@@ -86,6 +86,11 @@ TITLE_ROLE_KEYWORDS = [
     "query",
     "platform engineer",
     "ml systems",
+    "research fellow",
+    "postdoctoral",
+    "postdoc",
+    "lecturer",
+    "academic",
     "new grad",
     "graduate",
     "early career",
@@ -101,6 +106,9 @@ TITLE_REQUIRED_TOKENS = [
     "graduate",
     "student",
     "architect",
+    "fellow",
+    "lecturer",
+    "professor",
 ]
 
 EARLY_CAREER_TITLE_KEYWORDS = [
@@ -1092,8 +1100,10 @@ def send_email(subject: str, body: str, html_body: str | None = None) -> None:
 
     required = [smtp_host, smtp_port, smtp_username, smtp_password, email_from, email_to]
     if not all(required):
-        print("Email secrets not fully configured; skipped sending email.")
+        print("Email status: skipped (missing SMTP/EMAIL secret values).")
         return
+
+    print(f"Email status: attempting send via {smtp_host}:{smtp_port} to {email_to}.")
 
     message = EmailMessage()
     message["Subject"] = subject
@@ -1108,8 +1118,9 @@ def send_email(subject: str, body: str, html_body: str | None = None) -> None:
         with smtplib.SMTP_SSL(smtp_host, int(smtp_port), context=context) as server:
             server.login(smtp_username, smtp_password)
             server.send_message(message)
+        print("Email status: sent successfully.")
     except Exception as exc:
-        print(f"Email sending failed: {exc}")
+        print(f"Email status: failed ({type(exc).__name__}: {exc})")
 
 
 def main() -> int:
