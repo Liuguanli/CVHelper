@@ -152,6 +152,26 @@ LOCATION_PATTERNS = [
     re.compile(r"(Menlo Park, CA|London, UK|Zürich, CH|Sydney, NSW, Australia|Melbourne, VIC, Australia)"),
 ]
 
+AU_LOCATION_KEYWORDS = [
+    "australia",
+    "melbourne",
+    "victoria",
+    "vic",
+    "sydney",
+    "new south wales",
+    "nsw",
+    "brisbane",
+    "queensland",
+    "qld",
+    "perth",
+    "western australia",
+    "wa",
+    "canberra",
+    "adelaide",
+    "hobart",
+    "darwin",
+]
+
 
 @dataclass
 class Source:
@@ -370,12 +390,17 @@ def build_job(
     score, priority, category, resume_fit, research_fit, notes = score_job(title, text, config)
     if score == 0:
         return None
+    resolved_location = location or "Not shown on page"
+    # Hard filter: keep only explicitly Australia-based roles.
+    if not is_australia_location(resolved_location):
+        return None
+
     return Job(
         company=source.company,
         source=source.name,
         title=title,
         url=url,
-        location=location or "Not shown on page",
+        location=resolved_location,
         posted_or_updated=posted_or_updated or "Not shown on page",
         score=score,
         priority=priority,
@@ -384,6 +409,11 @@ def build_job(
         research_fit=research_fit,
         notes=notes,
     )
+
+
+def is_australia_location(location: str) -> bool:
+    normalized = (location or "").lower()
+    return any(keyword in normalized for keyword in AU_LOCATION_KEYWORDS)
 
 
 def collect_greenhouse_jobs(source: Source, config: dict) -> list[Job]:
@@ -653,6 +683,12 @@ def score_job(title: str, text: str, config: dict) -> tuple[int, str, str, str, 
         return 0, "skip", "Low Priority", "Low", "Low", "Filtered by exclusion keywords"
     if not looks_like_real_job_title(title):
         return 0, "skip", "Low Priority", "Low", "Low", "Filtered as non-job page"
+    required_location_keywords = config.get("required_location_keywords", [])
+    if required_location_keywords and not any(term in content for term in required_location_keywords):
+        return 0, "skip", "Low Priority", "Low", "Low", "Filtered by required location keywords"
+    excluded_location_keywords = config.get("excluded_location_keywords", [])
+    if any(term in content for term in excluded_location_keywords):
+        return 0, "skip", "Low Priority", "Low", "Low", "Filtered by excluded location keywords"
 
     score = 0
 
